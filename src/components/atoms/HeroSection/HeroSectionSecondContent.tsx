@@ -1,14 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Flagsvg from '../Svg/Flagsvg'
 import Facesvg from '../Svg/Facesvg'
-import Cursor from '../Cursor'
+import { useCursorAuth } from '@/context/CursorContext'
 
 const HeroSectionSecondContent = () => {
+const {enterElement} = useCursorAuth()
+
+
+
   return (
     <div className="min-h-[100vh] pt-36">
-      <Cursor/>
+      
       <div className=" flex items-center mb-5">
-        <div className="text-[160px] font-gt text-white w-9/12 h-fit">
+        <div
+          className="text-[160px] font-gt text-white w-9/12 h-fit"
+          onMouseOver={() => enterElement(true)}
+          onMouseOut={() => enterElement(false)}
+        >
           <h2 className="leading-[140px] font-normal relative z-20">
             Your second home in your pocket
           </h2>

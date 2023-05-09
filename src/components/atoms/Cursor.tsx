@@ -1,33 +1,45 @@
-import React, {useRef} from 'react'
+import React, { useState, useEffect, MouseEvent } from "react";
+import { useCursorAuth } from "@/context/CursorContext";
 
 const Cursor = () => {
-  const delay = 18
-  const cursorVisible = useRef(true)
-    const cursorEnlarged = useRef(true)
-    const endX = useRef(window.innerWidth/2)
-    const endY = useRef(window.innerHeight/2)
-    const _x = useRef(0)
-    const _y = useRef(0)
-    const requestRef = useRef(null)
-
-    const dot = useRef<HTMLInputElement>(null)
-    const dotOutline = useRef(null)
-
+    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+    const {mouseHover} = useCursorAuth()
     
+ useEffect(() => {
+   const mousemovehandler =(event: any) => {
+     const { x, y } = event;
+     console.log(event.x, event.y)
+     setMousePosition({ x: x, y:y });
+   }
 
-    const toggleCursorVisibility =() =>{
-      if(cursorVisible.current) {
-        dot.current.style.opacity = 1
-      }
-    }
+   document.addEventListener("mousemove", mousemovehandler );
+
+   return () => {
+     document.removeEventListener("mousemove", mousemovehandler);
+   };
+ }, []);
+
+
+
 
   return (
     <>
-        <div 
-  
-        className='pointer-events-none absolute top-[50%] left-[50%] -translate-x-[50%] -translate-[50%] rounded-full transition-all ease-in-out duration-300 w-10 h-10 bg-primary'/>
+      <div
+        className="pointer-events-none absolute rounded-full  bg-primary z-10"
+        style={{
+          left: mouseHover
+            ? `${mousePosition.x}px`
+            : `${mousePosition.x }px`,
+          top: mouseHover ? `${mousePosition.y}px` : `${mousePosition.y}px`,
+          transition:
+            "all ease-out 0.3s",
+          width: mouseHover? '500px':"80px",
+          height: mouseHover? '500px':"80px",
+          transform: mouseHover? 'translate(-250px, -250px)':'translate(-40px, -40px)'
+        }}
+      />
     </>
-  )
+  );
 }
 
 export default Cursor

@@ -6,7 +6,7 @@ const HeroSectionFirstContent = () => {
   return (
     <div className="flex justify-between items-center min-h-[100vh]">
       <div className="max-w-max w-6/12 font-gtb text-[180px] h-fit">
-        <div className="font-black relative">
+        <div className="font-black relative z-50">
           <span className="bg-gradient-to-r from-secondaryText to-white bg-clip-text text-transparent leading-[160px] block text-right">
             We
           </span>
@@ -16,11 +16,11 @@ const HeroSectionFirstContent = () => {
           </span>
         </div>
       </div>
-      <div className="w-6/12 top-24 relative">
+      <div className="w-6/12 top-24 relative z-50">
         <Image
           src={hero}
           alt="boy floating in clouds"
-          className="w-full h-[750px] object-cover aspect-square"
+          className="w-full h-[750px] object-cover aspect-square "
         />
       </div>
     </div>

@@ -8,6 +8,7 @@ import cloud2 from "../../public/cloud2.png";
 import cloud3 from "../../public/cloud3.png";
 import cloud5 from "../../public/cloud5.png";
 import cloud4 from "../../public/cloud4.png";
+import Characters from "@/components/molecules/Characters";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(0);
@@ -27,7 +28,9 @@ export default function Home() {
       <Mouthsvg size={scrolled} />
       <Header />
       <HeroSection scrolled={scrolled} />
-      <div className="bg-red-200 h-[10000px]" />
+      <Characters scrolled={scrolled}/>
+      <div className="h-[5000px]"/>
+      
     </>
   );
 }
