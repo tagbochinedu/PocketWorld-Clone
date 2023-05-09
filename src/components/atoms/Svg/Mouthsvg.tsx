@@ -11,9 +11,9 @@ interface Props {
 const Mouthsvg = ({size}: Props) => {
   return (
     <div
-      className={`w-full h-full fixed flex justify-center items-center z-10`}
+      className={`w-full h-full fixed flex justify-center items-center z-[1]`}
     >
-      <Cursor/>
+      <Cursor scrolled={size}/>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 4810 4810"

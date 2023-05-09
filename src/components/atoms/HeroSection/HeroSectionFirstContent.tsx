@@ -16,11 +16,11 @@ const HeroSectionFirstContent = () => {
           </span>
         </div>
       </div>
-      <div className="w-6/12 top-24 relative z-50">
+      <div className="w-6/12 top-24 relative">
         <Image
           src={hero}
-          alt="boy floating in clouds"
-          className="w-full h-[750px] object-cover aspect-square "
+          alt="boy floating in clouds relative"
+          className="w-full h-[750px] object-cover aspect-square relative z-20 "
         />
       </div>
     </div>

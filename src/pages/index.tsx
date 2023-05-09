@@ -9,6 +9,7 @@ import cloud3 from "../../public/cloud3.png";
 import cloud5 from "../../public/cloud5.png";
 import cloud4 from "../../public/cloud4.png";
 import Characters from "@/components/molecules/Characters";
+import Venture from "@/components/molecules/Venture";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(0);
@@ -29,7 +30,8 @@ export default function Home() {
       <Header />
       <HeroSection scrolled={scrolled} />
       <Characters scrolled={scrolled}/>
-      <div className="h-[5000px]"/>
+      <Venture scrolled={scrolled}/>
+      <div className={`h-[5000px] ${scrolled<1350? 'block':'hidden'}`}/>
       
     </>
   );
