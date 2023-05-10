@@ -16,7 +16,7 @@ const HeroSection = ({ scrolled }: Props) => {
           ? "fixed bg-secondary top-0 left-0 right-0"
           : " pt-[1350px] bg-secondary overflow-hidden"
       }`}
-      divClass="mx-auto max-w-[1340px] px-10"
+     
     >
       {scrolled <= 1300 ? (
         <HeroSectionFirstContent />

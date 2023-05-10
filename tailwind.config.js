@@ -11,6 +11,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: { hero: "" },
+      boxShadow: {
+        joblist: "-5px -5px 0px #fff",
+      },
       colors: {
         primary: "#0A1033",
         secondary: "#FF0DEE",

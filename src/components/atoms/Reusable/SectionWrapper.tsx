@@ -2,14 +2,13 @@ import React from 'react'
 
 interface Props {
     sectionClass: string;
-    divClass : string;
     children: React.ReactNode
 }
 
-const SectionWrapper = ({sectionClass, divClass, children}: Props) => {
+const SectionWrapper = ({sectionClass,children}: Props) => {
   return (
     <section className={` ${sectionClass}`}>
-      <div className={` ${divClass}`}>{children}</div>
+      <div className="mx-auto max-w-[1340px] px-10">{children}</div>
     </section>
   );
 }
