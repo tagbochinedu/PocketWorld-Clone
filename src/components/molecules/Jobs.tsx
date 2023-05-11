@@ -2,6 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import balloon from '../../../public/balloons.svg'
 import Joblist from '../atoms/Joblist'
+import Glassessvg from '../atoms/Svg/Glassessvg'
+import Pizzasvg from '../atoms/Svg/Pizzasvg'
 
 interface Props {
     scrolled: number
@@ -10,8 +12,13 @@ interface Props {
 const Jobs = ({scrolled}: Props) => {
   return (
     <section
-      className={`bg-secondary  ${scrolled < 1350 ? "hidden" : "block"}`}
+      className={`bg-secondary relative ${
+        scrolled < 1350 ? "hidden" : "block"
+      }`}
     >
+      <Glassessvg />
+      <Pizzasvg className="right-0 top-[450px] w-[236px] h-auto" />
+
       <div className="flex">
         <div className="w-5/12 relative top-[-95px] z-20">
           <Image
@@ -20,7 +27,7 @@ const Jobs = ({scrolled}: Props) => {
             className="w-full h-auto"
           />
         </div>
-        <Joblist/>
+        <Joblist />
       </div>
     </section>
   );}

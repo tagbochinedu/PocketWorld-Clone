@@ -5,7 +5,7 @@ const Joblist = () => {
   return (
     <div className="w-7/12 pt-36 font-gtb text-white text-[48px]">
       <div className="max-w-2xl">
-        <h5 className="relative z-20">Today’s hottest 🔥 jobs</h5>
+        <h5 className="relative z-20 mb-5">Today’s hottest 🔥 jobs</h5>
 
         <div className="">
           {jobs.map((job) => (

@@ -12,7 +12,7 @@ const Cursor = ({scrolled}: Props) => {
  useEffect(() => {
    const mousemovehandler =(event: any) => {
      const { x, y } = event;
-     console.log(event.x, event.y)
+
      setMousePosition({ x: x, y:y });
    }
 

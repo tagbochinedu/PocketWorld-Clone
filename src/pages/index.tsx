@@ -11,6 +11,7 @@ import cloud4 from "../../public/cloud4.png";
 import Characters from "@/components/molecules/Characters";
 import Venture from "@/components/molecules/Venture";
 import Jobs from "@/components/molecules/Jobs";
+import OurWorld from "@/components/molecules/OurWorld";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(0);
@@ -21,8 +22,6 @@ export default function Home() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
-    console.log(scrolled);
   }, [scrolled]);
 
   return (
@@ -30,11 +29,11 @@ export default function Home() {
       <Mouthsvg size={scrolled} />
       <Header />
       <HeroSection scrolled={scrolled} />
-      <Characters scrolled={scrolled}/>
-      <Venture scrolled={scrolled}/>
-      <Jobs scrolled={scrolled}/>
-      <div className={`h-[5000px] ${scrolled<1350? 'block':'hidden'}`}/>
-      
+      <Characters scrolled={scrolled} />
+      <Venture scrolled={scrolled} />
+      <Jobs scrolled={scrolled} />
+      <OurWorld scrolled={scrolled} />
+      <div className={`h-[5000px] ${scrolled < 1350 ? "block" : "hidden"}`} />
     </>
   );
 }
