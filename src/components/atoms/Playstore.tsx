@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import high from "../../../public/highrise.svg";
 import ever from "../../../public/everskies.png";
 import Image from "next/image";
@@ -76,6 +76,6 @@ const Playstore = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Playstore
+export default Playstore;

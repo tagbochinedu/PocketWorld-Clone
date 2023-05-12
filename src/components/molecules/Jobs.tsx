@@ -12,7 +12,7 @@ interface Props {
 const Jobs = ({scrolled}: Props) => {
   return (
     <section
-      className={`bg-secondary relative ${
+      className={`bg-secondary relative z-20 ${
         scrolled < 1350 ? "hidden" : "block"
       }`}
     >

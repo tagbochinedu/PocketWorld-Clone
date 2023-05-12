@@ -10,7 +10,9 @@ interface Props {
 const Venture = ({scrolled}: Props) => {
   return (
     <SectionWrapper
-      sectionClass={`bg-primary pb-56 ${scrolled < 1350 ? "hidden" : "block"}`}
+      sectionClass={`bg-primary pb-56  relative z-20  ${
+        scrolled < 1350 ? "hidden" : "block"
+      }`}
     >
       {" "}
       <div className="text-white pb-16 pt-36 relative z-20">
@@ -19,7 +21,7 @@ const Venture = ({scrolled}: Props) => {
           <span className="font-black ">an immersive social experience.</span>
         </p>
       </div>
-      <Playstore/>
+      <Playstore />
     </SectionWrapper>
   );
 }

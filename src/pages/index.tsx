@@ -14,6 +14,7 @@ import Jobs from "@/components/molecules/Jobs";
 import OurWorld from "@/components/molecules/OurWorld";
 import Stories from "@/components/molecules/Stories";
 import JoinUs from "@/components/molecules/JoinUs";
+import Footer from "@/components/atoms/Footer";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(0);
@@ -37,6 +38,7 @@ export default function Home() {
       <OurWorld scrolled={scrolled} />
       <Stories scrolled={scrolled} />
       <JoinUs scrolled={scrolled} />
+      <Footer/>
       <div className={`h-[5000px] ${scrolled < 1350 ? "block" : "hidden"}`} />
     </>
   );

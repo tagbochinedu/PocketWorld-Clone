@@ -4,7 +4,7 @@ import hero from "../../../../public/heroImage.png";
 
 const HeroSectionFirstContent = () => {
   return (
-    <div className="flex justify-between items-center min-h-[100vh] pt-36">
+    <div className="flex justify-between items-center min-h-[100vh] pt-5">
       <div className="max-w-max w-6/12 font-gtb text-[180px] h-fit">
         <div className="font-black relative z-50">
           <span className="bg-gradient-to-r from-secondaryText to-white bg-clip-text text-transparent leading-[160px] block text-right">

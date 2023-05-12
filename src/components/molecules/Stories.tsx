@@ -14,7 +14,7 @@ interface Props {
 
 const Stories = ({scrolled}:Props) => {
   return (
-    <section className={` relative ${scrolled < 1350 ? "hidden" : "block"}`}>
+    <section className={` relative z-20 ${scrolled < 1350 ? "hidden" : "block"}`}>
       <div className="bg-secondary pb-28">
         <div className="mx-auto max-w-[1340px] px-10">
           <div className="flex">
