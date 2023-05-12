@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Mouthsvg from "../components/atoms/Svg/Mouthsvg";
-import Header from "@/components/atoms/Reusable/Header";
+import Header from "@/components/atoms/Header";
 import HeroSection from "@/components/molecules/HeroSection";
 import cloud1 from "../../public/cloud1.png";
 import cloud2 from "../../public/cloud2.png";
@@ -29,14 +29,14 @@ export default function Home() {
   return (
     <>
       <Mouthsvg size={scrolled} />
-      <Header />
+      <Header scrolled={scrolled} />
       <HeroSection scrolled={scrolled} />
       <Characters scrolled={scrolled} />
       <Venture scrolled={scrolled} />
       <Jobs scrolled={scrolled} />
       <OurWorld scrolled={scrolled} />
-      <Stories scrolled={scrolled}/>
-      <JoinUs scrolled={scrolled}/>
+      <Stories scrolled={scrolled} />
+      <JoinUs scrolled={scrolled} />
       <div className={`h-[5000px] ${scrolled < 1350 ? "block" : "hidden"}`} />
     </>
   );
