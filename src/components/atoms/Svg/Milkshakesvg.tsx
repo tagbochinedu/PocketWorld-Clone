@@ -8,7 +8,7 @@ const Milkshakesvg = () => {
       height="64"
       viewBox="0 0 53 64"
       fill="none"
-      className="absolute top-6 left-[76px]"
+      className="absolute top-7 left-[76px]"
     >
       <g clip-path="url(#clip0_443:7536)">
         <path

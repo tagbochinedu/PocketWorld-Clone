@@ -12,6 +12,7 @@ import Characters from "@/components/molecules/Characters";
 import Venture from "@/components/molecules/Venture";
 import Jobs from "@/components/molecules/Jobs";
 import OurWorld from "@/components/molecules/OurWorld";
+import Stories from "@/components/molecules/Stories";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(0);
@@ -33,6 +34,7 @@ export default function Home() {
       <Venture scrolled={scrolled} />
       <Jobs scrolled={scrolled} />
       <OurWorld scrolled={scrolled} />
+      <Stories scrolled={scrolled}/>
       <div className={`h-[5000px] ${scrolled < 1350 ? "block" : "hidden"}`} />
     </>
   );
