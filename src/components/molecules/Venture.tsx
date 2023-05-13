@@ -10,7 +10,7 @@ interface Props {
 const Venture = ({scrolled}: Props) => {
   return (
     <SectionWrapper
-      sectionClass={`bg-primary pb-56  relative z-20  ${
+      sectionClass={`bg-primary pb-56  relative  ${
         scrolled < 1350 ? "hidden" : "block"
       }`}
     >

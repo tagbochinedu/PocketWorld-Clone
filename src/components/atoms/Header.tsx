@@ -22,7 +22,6 @@ const Header = ({ scrolled }: Props) => {
       else if (scrolled < lastScrollY) {
         setNavInView(true);
       }
-      console.log(scrolled, lastScrollY);
       setLastScrollY(scrolled);
     }
   }
@@ -33,7 +32,7 @@ const Header = ({ scrolled }: Props) => {
 
   return (
     <header
-      className={`fixed z-30 left-0 right-0 ransition-all ease-linear duration-[300ms] ${
+      className={`fixed z-50 left-0 right-0 ransition-all ease-linear duration-[300ms] ${
         navInView ? "top-[20px]" : "top-[-100px]"
       }`}
     >

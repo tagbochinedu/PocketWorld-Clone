@@ -9,7 +9,7 @@ const {enterElement} = useCursorAuth()
 
 
   return (
-    <div className="min-h-[100vh] pt-36">
+    <div className="min-h-[100vh] pt-36 relative">
       
       <div className=" flex items-center mb-5">
         <div
@@ -17,19 +17,19 @@ const {enterElement} = useCursorAuth()
           onMouseOver={() => enterElement(true)}
           onMouseOut={() => enterElement(false)}
         >
-          <h2 className="leading-[140px] font-normal relative z-20">
+          <h2 className="leading-[140px] font-normal  relative z-20">
             Your second home in your pocket
           </h2>
         </div>
-        <div className="grow ml-12 relative z-20">
+        <div className="grow ml-12 relative z-40">
           <Flagsvg />
         </div>
       </div>
       <div className="flex">
-        <div className="w-6/12 justify-end flex pr-10 relative z-20">
+        <div className="w-6/12 justify-end flex pr-10 relative z-30">
           <Facesvg />
         </div>
-        <div className="w-6/12 text-white relative z-20">
+        <div className="w-6/12 text-white relative z-30">
           <h5 className="text-5xl font-gtb  font-black leading-[56px] mb-6">
             Our mission is to empower creativity and connection in a digital
             world.

@@ -13,7 +13,7 @@ const OurWorld = ({scrolled}: Props) => {
 const { enterElement } = useCursorAuth();
 
   return (
-    <SectionWrapper sectionClass={`bg-secondary relative z-20 pb-10 ${
+    <SectionWrapper sectionClass={`bg-secondary relative pb-10 ${
         scrolled < 1350 ? "hidden" : "block"
       }`}>
       <Pizzasvg className="right-[260px] rotate-[230deg] top-[-100px] w-[180px] h-auto" />
