@@ -29,8 +29,40 @@ export default function Home() {
   }, [scrolled]);
 
   return (
-    <>
-
+    <div className=" overflow-hidden">
+      <Image
+        src={cloud1}
+        alt="floating cloud 1"
+        className={`fixed top-[100px] w-[120px] h-20 left-[50%] opacity-90 animate-cloud1 ${scrolled>300?'hidden':''}`}
+      />
+      <Image
+        src={cloud2}
+        width={100}
+        height={70}
+        alt="floating cloud2"
+        className={`fixed top-[100px] w-[120px] h-20 left-[10%] opacity-90 animate-cloud2 z-10 ${scrolled>300?'hidden':''}`}
+      />{" "}
+      <Image
+        src={cloud3}
+        width={200}
+        height={140}
+        alt="floating cloud 1"
+        className={`fixed top-[200px] left-[300px] z-20 opacity-90 animate-cloud3 ${scrolled>300?'hidden':''}`}
+      />
+      <Image
+        src={cloud4}
+        width={100}
+        height={70}
+        alt="floating cloud 1"
+        className={`fixed top-20 left-20 z-20 opacity-90 animate-cloud4 ${scrolled>300?'hidden':''}`}
+      />{" "}
+      <Image
+        src={cloud5}
+        width={100}
+        height={70}
+        alt="floating cloud 1"
+        className={`fixed top-20 left-20 opacity-90 z-20  animate-cloud5  ${scrolled>300?'hidden':''}`}
+      />
       <Mouthsvg size={scrolled} />
       <Header scrolled={scrolled} />
       <HeroSection scrolled={scrolled} />
@@ -42,41 +74,12 @@ export default function Home() {
       <JoinUs scrolled={scrolled} />
       <Footer />
       <div className={`h-[5000px] ${scrolled < 1350 ? "block" : "hidden"}`} />
-    </>
+    </div>
   );
 }
 
-/*<Image
-        src={cloud1}
-        alt="floating cloud 1"
-        className="absolute top-[100px] w-[120px] h-20 left-[50%] opacity-90 animate-cloud1"
-      />
-      <Image
-        src={cloud2}
-        width={100}
-        height={70}
-        alt="floating cloud2"
-        className="absolute top-[130px] left-[120px] opacity-90 hidden "
-      />{" "}
-      <Image
-        src={cloud3}
-        width={200}
-        height={140}
-        alt="floating cloud 1"
-        className="absolute top-[200px] left-[300px] z-20 opacity-90 hidden"
-      />{" "}
-      <Image
-        src={cloud4}
-        width={100}
-        height={70}
-        alt="floating cloud 1"
-        className="absolute top-20 left-20 opacity-90 hidden "
-      />{" "}
-      <Image
-        src={cloud5}
-        width={100}
-        height={70}
-        alt="floating cloud 1"
-        className="absolute top-20 left-20 opacity-90 hidden "
-      />
+/*
+     {" "}
+    
+     
       */

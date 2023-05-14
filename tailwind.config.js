@@ -26,7 +26,11 @@ module.exports = {
         gtr: "GT AmericaR",
       },
       animation: {
-        cloud1: "cloud1 30s linear infinite",
+        cloud1: "cloud1 50s linear infinite",
+        cloud2: "cloud2 50s linear infinite",
+        cloud3: "cloud3 50s linear infinite",
+        cloud4: "cloud4 50s linear infinite",
+        cloud5: "cloud5 50s linear infinite",
       },
       keyframes: {
         cloud1: {
@@ -40,7 +44,7 @@ module.exports = {
             left: "110%",
             zIndex: "1",
           },
-          "70%": {
+          "71%": {
             top: "15%",
             left: "110%",
             zIndex: "-1",
@@ -50,9 +54,62 @@ module.exports = {
             left: "-26%",
             zIndex: "-1",
           },
+          "73%": {
+            top: "15%",
+            left: "-26%",
+            zIndex: "1",
+          },
           "100%": {
             top: "15%",
             left: "15%",
+            zIndex: "1",
+          },
+        },
+        cloud2: {
+          "0%": {
+            top: "25%",
+            left: "-28%",
+            zIndex: "1",
+          },
+          "100%": {
+            top: "25%",
+            left: "107%",
+            zIndex: "1",
+          },
+        },
+        cloud3: {
+          "0%": {
+            top: "130px",
+            left: "-15%",
+            zIndex: "1",
+          },
+          "100%": {
+            top: "130px",
+            left: "120%",
+            zIndex: "1",
+          },
+        },
+        cloud4: {
+          "0%": {
+            top: "15%",
+            left: "-35%",
+            zIndex: "1",
+          },
+          "100%": {
+            top: "15%",
+            left: "100%",
+            zIndex: "1",
+          },
+        },
+        cloud5: {
+          "0%": {
+            top: "20%",
+            left: "-50%",
+            zIndex: "1",
+          },
+          "100%": {
+            top: "20%",
+            left: "100%",
             zIndex: "1",
           },
         },
