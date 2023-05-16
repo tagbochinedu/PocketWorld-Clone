@@ -4,7 +4,7 @@ import Popup from '../Reusable/Popup';
 
 const Onesvg = ({state}:AnimationState) => {
   return (
-    <div className="relative">
+    <div className="relative z-20">
      
       <Popup
         divclassName={`${
@@ -21,7 +21,7 @@ const Onesvg = ({state}:AnimationState) => {
         viewBox="0 0 191 286"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="relative top-[175px] z-20"
+        className="relative top-[175px]"
       >
         <g filter="url(#filter0_f_477:16041)">
           <ellipse cx="99" cy="248.5" rx="58" ry="13.5" fill="#00041E" />
