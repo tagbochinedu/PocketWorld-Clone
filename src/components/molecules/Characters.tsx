@@ -23,7 +23,7 @@ setAnimationState(true)
        }
 
      }
-   }, [scrolled]);
+   }, [scrolled, element, rect]);
 
 
   return (

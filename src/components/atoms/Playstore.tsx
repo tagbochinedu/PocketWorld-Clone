@@ -1,5 +1,7 @@
 import React from "react";
 import high from "../../../public/highrise.svg";
+import appstore from '../../../public/appstore.svg'
+import google from "../../../public/google.svg";
 import ever from "../../../public/everskies.png";
 import Image from "next/image";
 
@@ -23,8 +25,8 @@ const Playstore = () => {
             target="_blank"
             className="mr-6"
           >
-            <img
-              src="https://assets.website-files.com/616d6bd0f145779c3a8a92eb/616e8b7121e0a422326a3aa4_app-store.svg"
+            <Image
+              src={appstore}
               alt="App Store"
             />
           </a>
@@ -33,8 +35,8 @@ const Playstore = () => {
             target="_blank"
             className=""
           >
-            <img
-              src="https://assets.website-files.com/616d6bd0f145779c3a8a92eb/616e8b7183346a68a2aa90fa_google-play.svg"
+            <Image
+              src={google}
               alt="Google Play"
             />
           </a>

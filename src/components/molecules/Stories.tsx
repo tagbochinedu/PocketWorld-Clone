@@ -65,7 +65,7 @@ const Stories = ({scrolled}:Props) => {
               </div>
               <div className="w-7/12">
                 <p className="font-gt text-base font-normal leading-6 mb-7">
-                  "If I would need to pick two things that I’m grateful for
+                  &quot;If I would need to pick two things that I’m grateful for
                   experiencing at Pocket Worlds, that would be ownership and
                   growth. Chance to take full ownership of the product feature
                   you are developing, freedom to make decisions that really
@@ -74,7 +74,7 @@ const Stories = ({scrolled}:Props) => {
                   product faster and achieve growth by entrusting each
                   individual to make meaningful decisions. By empowering our
                   users and our employees, both our team and user-base have
-                  grown 5x since I joined and we don’t plan to stop!"
+                  grown 5x since I joined and we don’t plan to stop!&quot;
                 </p>
                 <p className="text-lgg font-bold leading-8">Marko</p>
                 <p className="font-gt text-base font-normal leading-6 opacity-70">
@@ -88,11 +88,11 @@ const Stories = ({scrolled}:Props) => {
               </div>
               <div className="w-7/12 h-fit">
                 <p className="font-gt text-base font-normal leading-6 mb-7">
-                  "I love that we have a company culture where people aren’t
+                  &quot;I love that we have a company culture where people aren’t
                   just *allowed* to share their ideas, we’re *encouraged* to do
                   so. Regardless of whether you’re an artist or an engineer,
                   junior or team lead, a fresh hire or a seasoned veteran, your
-                  opinions matter."
+                  opinions matter.&quot;
                 </p>
                 <p className="text-lgg font-bold leading-8">Ryan</p>
                 <p className="font-gt text-base font-normal leading-6 opacity-70">

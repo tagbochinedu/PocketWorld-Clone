@@ -25,7 +25,7 @@ const Jobs = <T extends DOMRect>({scrolled}: Props) => {
         setAnimationState(true);
       }
     }
-  }, [scrolled]);
+  }, [scrolled, element, rect]);
 
 
   return (

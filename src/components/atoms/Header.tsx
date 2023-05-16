@@ -11,7 +11,10 @@ const Header = ({ scrolled }: Props) => {
   const [navInView, setNavInView] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
-  function Scrolled() {
+  
+
+  useEffect(() => {
+  
     // only trigger if scrolled more than delta
     if (Math.abs(lastScrollY - scrolled)) {
       // scroll down -> hide nav bar
@@ -23,12 +26,9 @@ const Header = ({ scrolled }: Props) => {
         setNavInView(true);
       }
       setLastScrollY(scrolled);
-    }
+   
   }
-
-  useEffect(() => {
-    Scrolled();
-  }, [scrolled]);
+  }, [scrolled, lastScrollY]);
 
   return (
     <header
