@@ -1,3 +1,11 @@
+export interface Props {
+  scrolled: number
+}
+
+export interface AnimationState {
+  state: boolean
+}
+
 export const navlinks = [
     {name: 'Company', link: 'company'},
     {name: 'Our Worlds', link: 'our-worlds'},

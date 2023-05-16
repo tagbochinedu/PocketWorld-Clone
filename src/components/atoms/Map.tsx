@@ -46,7 +46,6 @@ export default function Map() {
   const [pin] = useState(pins[0]);
   const [whitepins] = useState(locations);
 
-  useEffect(()=>{console.log(pins, points)},[])
 
   const viewBox = `${pin.x - size.x / 2 + offset.x} ${
     pin.y - size.y / 5 + offset.y

@@ -9,7 +9,7 @@ const {enterElement} = useCursorAuth()
 
 
   return (
-    <div className="min-h-[100vh] pt-36 relative">
+    <div className="min-h-[100vh] pt-36 pb-10 relative">
       
       <div className=" flex items-center mb-5">
         <div

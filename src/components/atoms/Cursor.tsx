@@ -19,7 +19,6 @@ const Cursor = ({scrolled}: Props) => {
      setY(pageY)
     
    }
-    console.log(scrolled)
 
    document.addEventListener("mousemove", mousemovehandler );
 

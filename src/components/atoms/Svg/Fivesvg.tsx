@@ -1,6 +1,7 @@
 import React from 'react'
+import { AnimationState } from "@/lib/data";
 
-const Fivesvg = () => {
+const Fivesvg = ({ state }: AnimationState) => {
   return (
     <svg
       width="164"
@@ -4419,6 +4420,6 @@ const Fivesvg = () => {
       </defs>
     </svg>
   );
-}
+};
 
 export default Fivesvg

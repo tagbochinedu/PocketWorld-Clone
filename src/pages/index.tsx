@@ -3,7 +3,6 @@ import Image from "next/image";
 import Mouthsvg from "../components/atoms/Svg/Mouthsvg";
 import Header from "@/components/atoms/Header";
 import HeroSection from "@/components/molecules/HeroSection";
-
 import cloud1 from "../../public/cloud1.png";
 import cloud2 from "../../public/cloud2.png";
 import cloud3 from "../../public/cloud3.png";
