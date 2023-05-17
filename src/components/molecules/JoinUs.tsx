@@ -40,8 +40,8 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
             <Popup
               divclassName={`${
                 animationState
-                  ? "top-[-60px] opacity-100"
-                  : "top-[118px] opacity-0"
+                  ? "top-[-76px] opacity-100"
+                  : "top-[-5px] opacity-0"
               }`}
               nameText="pocket_magic
 "
@@ -75,7 +75,7 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
             <Popup
               divclassName={`delay-[900ms] ${
                 animationState
-                  ? "top-[-115px] left-[30px] opacity-100 animate-chat2"
+                  ? "top-[-115px] left-[30px] opacity-100 animate-chat6"
                   : "top-[8px] opacity-0"
               }`}
               nameText="barb_stacy78
@@ -84,9 +84,9 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
               ballclassName="bottom-[-7.5px] left-[27%] hidden"
             />{" "}
             <Popup
-              divclassName={`delay-[1550ms] ${
+              divclassName={`delay-[1800ms] ${
                 animationState
-                  ? "top-[-60px] left-[30px] opacity-100 animate-chat3"
+                  ? "top-[-60px] left-[30px] opacity-100 animate-chat7"
                   : "top-[-5px] opacity-0"
               }`}
               nameText="barb_stacy78

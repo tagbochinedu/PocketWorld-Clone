@@ -36,6 +36,8 @@ module.exports = {
         chat3: "chat3 650ms linear 5400ms 1 ",
         chat4: "chat4 1550ms linear 1 ",
         chat5: "chat5 650ms linear 900ms 1 ",
+        chat6: "chat2 1550ms linear 900ms 1 ",
+        chat7: "chat3 650ms linear 1800ms 1 ",
       },
       keyframes: {
         cloud1: {
@@ -204,6 +206,37 @@ module.exports = {
 
           "100%": {
             top: "255px",
+            opacity: "1",
+          },
+        },
+        chat6: {
+          "0%": {
+            top: "-5px",
+            opacity: "0",
+            left: "30px",
+          },
+          "42%": {
+            top: "-60px",
+            opacity: "1",
+          },
+          "58%": {
+            top: "-60px",
+            opacity: "1",
+          },
+          "100%": {
+            top: "-115px",
+            opacity: "1",
+          },
+        },
+        chat7: {
+          "0%": {
+            top: "-5px",
+            opacity: "0",
+            left: "30px",
+          },
+
+          "100%": {
+            top: "-60px",
             opacity: "1",
           },
         },
