@@ -46,7 +46,9 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
               nameText="pocket_magic
 "
               messageText={
-                <span>We're building the future of social experiences 🚀</span>
+                <span>
+                  We&apos;re building the future of social experiences 🚀
+                </span>
               }
               ballclassName="bottom-[-7.5px] left-[45%]"
             />
