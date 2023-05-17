@@ -3,7 +3,7 @@ import React from 'react'
 interface Details {
     divclassName: string;
     nameText: string;
-    messageText: string;
+    messageText: string | React.ReactNode;
     ballclassName: string
 }
 
