@@ -89,7 +89,7 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
               }`}
               nameText="barb_stacy78
 "
-              messageText="Wild child or more subdude, you’ll find your place."
+              messageText="Wild child or more subdude, you'll find your place."
               ballclassName="bottom-[-7.5px] left-[27%]"
             />
             <PlanetWomansvg />
