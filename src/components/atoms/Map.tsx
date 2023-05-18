@@ -1,6 +1,7 @@
 import { useState} from "react";
 import DottedMap from "dotted-map";
 import { locations} from "@/lib/data";
+import {v4 as uuidv4} from 'uuid'
 
 
 const map = new DottedMap({ height: 60, grid: "vertical" });
@@ -150,7 +151,7 @@ export default function Map() {
       >
         {points.map((point) => (
           <circle
-          key={point.x}
+          key={uuidv4().toString()}
             cx={point.x}
             cy={point.y}
             r={svgOptions.radius}

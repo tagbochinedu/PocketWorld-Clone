@@ -1,37 +1,38 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useCallback} from 'react'
 import Image from 'next/image'
 import balloon from '../../../public/balloons.svg'
 import Joblist from '../atoms/Joblist'
 import Glassessvg from '../atoms/Svg/Glassessvg'
 import Pizzasvg from '../atoms/Svg/Pizzasvg'
 import Popup from '../atoms/Reusable/Popup'
+import { Props } from '@/lib/data'
 
-interface Props {
-    scrolled: number
-}
 
-const Jobs = <T extends DOMRect>({scrolled}: Props) => {
+const Jobs = <T extends DOMRect>({scrolled, width}: Props) => {
 
   const [element, setElement] = useState<HTMLDivElement | null>(null);
   const [rect, setRect] = useState<T | null>(null);
   const [animationState, setAnimationState] = useState(false);
 
-  useEffect(() => {
-    if (element) {
-      const container = element.getBoundingClientRect();
-      setRect(container as T);
-      console.log(element, rect);
-      if (rect && rect.y < 700 && rect.y > 0) {
-        setAnimationState(true);
-      }
+const animate = useCallback(() => {
+  if (element) {
+    const container = element.getBoundingClientRect();
+    setRect(container as T);
+    if (rect && rect.y < 700 && rect.y > 0) {
+      setAnimationState(true);
     }
-  }, [scrolled, element, rect]);
+  }
+}, [rect, scrolled, element]);
+
+useEffect(() => {
+  animate();
+}, [scrolled]);
 
 
   return (
     <section
       className={`bg-secondary relative ${
-        scrolled < 1350 ? "hidden" : "block"
+        scrolled < 1350 && width > 1024 ? "hidden" : "block"
       }`}
     >
       <Glassessvg />

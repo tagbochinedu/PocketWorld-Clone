@@ -3,19 +3,17 @@ import SectionWrapper from '../atoms/Reusable/SectionWrapper'
 import Pizzasvg from "../atoms/Svg/Pizzasvg";
 import { useCursorAuth } from "@/context/CursorContext";
 import Map from '../atoms/Map';
-
-interface Props {
-  scrolled: number;
-}
+import { Props } from '@/lib/data';
 
 
-const OurWorld = ({scrolled}: Props) => {
+
+const OurWorld = ({scrolled, width}: Props) => {
 const { enterElement } = useCursorAuth();
 
   return (
     <SectionWrapper
       sectionClass={`bg-secondary relative pb-10 pt-10 lg:pt-0 ${
-        scrolled < 1350 ? "hidden" : "block"
+        scrolled < 1350 && width > 1024 ? "hidden" : "block"
       }`}
     >
       <Pizzasvg className="right-[260px] rotate-[230deg] top-[-100px] w-[180px] h-auto hidden lg:block" />

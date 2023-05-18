@@ -1,5 +1,7 @@
 export interface Props {
   scrolled: number
+  width: number
+  className?: string
 }
 
 export interface AnimationState {

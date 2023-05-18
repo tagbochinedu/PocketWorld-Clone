@@ -1,10 +1,10 @@
-import React from 'react'
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 import hero from "../../../../public/heroImage.png";
 
 const HeroSectionFirstContent = () => {
   return (
-    <div className="flex justify-between items-center min-h-[100vh] py-28 lg:py-0">
+    <div className="flex justify-between items-center min-h-[50vw] lg:min-h-[100vh] py-28 lg:py-0 ">
       <div className="max-w-max w-6/12 font-gtb text-[120px] lg:text-[180px] h-max">
         <div className="font-black relative ">
           <span className="bg-gradient-to-r from-secondaryText to-white bg-clip-text text-transparent leading-[110px] lg:leading-[160px] block text-right">
@@ -27,6 +27,6 @@ const HeroSectionFirstContent = () => {
       </div>
     </div>
   );
-}
+};
 
-export default HeroSectionFirstContent
+export default HeroSectionFirstContent;

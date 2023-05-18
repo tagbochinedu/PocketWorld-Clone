@@ -1,34 +1,35 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useCallback} from 'react'
 import PlanetMansvg from '../atoms/Svg/PlanetMansvg';
 import PlanetWomansvg from '../atoms/Svg/PlanetWomansvg';
 import Popup from '../atoms/Reusable/Popup';
+import { Props } from '@/lib/data';
 
-interface Props {
-  scrolled: number;
-}
-
-const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
+const JoinUs = <T extends DOMRect>({scrolled, width}:Props) => {
 
   const [element, setElement] = useState<HTMLDivElement | null>(null);
   const [rect, setRect] = useState<T | null>(null);
   const [animationState, setAnimationState] = useState(false);
 
-  useEffect(() => {
-    if (element) {
-      const container = element.getBoundingClientRect();
-      setRect(container as T);
-      console.log(element, rect);
-      if (rect && rect.y < 700 && rect.y > 0) {
-        setAnimationState(true);
-      }
-    }
-  }, [scrolled, element, rect]);
+
+ const animate = useCallback(() => {
+   if (element) {
+     const container = element.getBoundingClientRect();
+     setRect(container as T);
+     if (rect && rect.y < 700 && rect.y > 0) {
+       setAnimationState(true);
+     }
+   }
+ }, [rect, scrolled, element]);
+
+ useEffect(() => {
+   animate();
+ }, [scrolled]);
 
 
   return (
     <section
       className={`bg-[#ea88ff] relative py-28 z-20 lg:rounded-b-[120px] lg:mb-[95vh]  ${
-        scrolled < 1350 ? "hidden" : "block"
+        scrolled < 1350 && width > 1024 ? "hidden" : "block"
       }`}
     >
       <div className="mx-auto max-w-[1340px] px-7 lg:px-10 text-white">

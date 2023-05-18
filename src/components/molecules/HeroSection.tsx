@@ -9,7 +9,7 @@ interface Props {
 const HeroSection = ({ scrolled }: Props) => {
   return (
     <SectionWrapper
-      sectionClass={` ${
+      sectionClass={`hidden lg:block ${
         scrolled <= 1300
           ? "fixed bg-primary top-[0px] left-0 right-0"
           : scrolled > 1300 && scrolled < 1350

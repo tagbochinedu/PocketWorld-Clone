@@ -3,11 +3,7 @@ import Image from "next/image";
 import Mouthsvg from "../components/atoms/Svg/Mouthsvg";
 import Header from "@/components/atoms/Header";
 import HeroSection from "@/components/molecules/HeroSection";
-import cloud1 from "../../public/cloud1.png";
-import cloud2 from "../../public/cloud2.png";
-import cloud3 from "../../public/cloud3.png";
-import cloud5 from "../../public/cloud5.png";
-import cloud4 from "../../public/cloud4.png";
+
 import Characters from "@/components/molecules/Characters";
 import Venture from "@/components/molecules/Venture";
 import Jobs from "@/components/molecules/Jobs";
@@ -15,70 +11,52 @@ import OurWorld from "@/components/molecules/OurWorld";
 import Stories from "@/components/molecules/Stories";
 import JoinUs from "@/components/molecules/JoinUs";
 import Footer from "@/components/atoms/Footer";
+import SectionWrapper from "@/components/atoms/Reusable/SectionWrapper";
+import HeroSectionFirstContent from "@/components/atoms/HeroSection/HeroSectionFirstContent";
+import HeroSectionSecondContent from "@/components/atoms/HeroSection/HeroSectionSecondContent";
+import Clouds from "@/components/atoms/Reusable/Clouds";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(0);
+  const [width, setWidth] = useState(0);
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+  };
 
   const handleScroll = () => {
     setScrolled(window.scrollY);
   };
 
   useEffect(() => {
+    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
-  }, [scrolled]);
+  }, [scrolled, width]);
 
   return (
     <div className=" overflow-hidden">
-      <Image
-        src={cloud1}
-        alt="floating cloud 1"
-        className={`fixed top-[100px] w-[120px] h-20 left-[50%] opacity-90 animate-cloud1 ${scrolled>300?'hidden':''}`}
-      />
-      <Image
-        src={cloud2}
-        width={100}
-        height={70}
-        alt="floating cloud2"
-        className={`fixed top-[100px] w-[120px] h-20 left-[10%] opacity-90 animate-cloud2 z-10 ${scrolled>300?'hidden':''}`}
-      />{" "}
-      <Image
-        src={cloud3}
-        width={200}
-        height={140}
-        alt="floating cloud 1"
-        className={`fixed top-[200px] left-[300px] z-20 opacity-90 animate-cloud3 ${scrolled>300?'hidden':''}`}
-      />
-      <Image
-        src={cloud4}
-        width={100}
-        height={70}
-        alt="floating cloud 1"
-        className={`fixed top-20 left-20 z-20 opacity-90 animate-cloud4 ${scrolled>300?'hidden':''}`}
-      />{" "}
-      <Image
-        src={cloud5}
-        width={100}
-        height={70}
-        alt="floating cloud 1"
-        className={`fixed top-20 left-20 opacity-90 z-20  animate-cloud5  ${scrolled>300?'hidden':''}`}
-      />
+      <Clouds scrolled={scrolled} width={width} className={`overflow-hidden ${width<1024? 'hidden':''}`}/>
       <Mouthsvg size={scrolled} />
       <Header scrolled={scrolled} />
       <HeroSection scrolled={scrolled} />
-      <Characters scrolled={scrolled} />
-      <Venture scrolled={scrolled} />
-      <Jobs scrolled={scrolled} />
-      <OurWorld scrolled={scrolled} />
-      <Stories scrolled={scrolled} />
-      <JoinUs scrolled={scrolled} />
+      <SectionWrapper sectionClass="block lg:hidden bg-primary relative">
+        <Clouds scrolled={scrolled} width={width} className='absolute h-32 w-full top-40 overflow-hidden ' />
+        <HeroSectionFirstContent />
+      </SectionWrapper>
+      <SectionWrapper sectionClass="block lg:hidden bg-secondary">
+        <HeroSectionSecondContent />
+      </SectionWrapper>
+      <Characters scrolled={scrolled} width={width} />
+      <Venture scrolled={scrolled} width={width} />
+      <Jobs scrolled={scrolled} width={width} />
+      <OurWorld scrolled={scrolled} width={width} />
+      <Stories scrolled={scrolled} width={width} />
+      <JoinUs scrolled={scrolled} width={width} />
       <Footer />
-      <div className={`h-[5000px] ${scrolled < 1350 ? "block" : "hidden"}`} />
+      <div
+        className={`h-[5000px] ${
+          scrolled < 1350 && width > 1024 ? "block" : "hidden"
+        }`}
+      />
     </div>
   );
 }
-
-/*
-     {" "}
-    
-     
-      */

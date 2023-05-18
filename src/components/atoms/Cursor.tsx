@@ -47,7 +47,7 @@ useEffect(() => {
       style={{
         left: `${endX.current}px`,
         top: `${endY.current}px`,
-        transition: "all linear 0.5s",
+        transition: "all linear 0.3s",
         width: mouseHover ? "500px" : "80px",
         height: mouseHover ? "500px" : "80px",
         transform: mouseHover

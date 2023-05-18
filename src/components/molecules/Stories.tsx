@@ -7,14 +7,15 @@ import Dogsvg from "../atoms/Svg/Dogsvg";
 import Cubesvg from '../atoms/Svg/Cubesvg';
 import stor1 from '../../../public/stories1.png'
 import stor2 from "../../../public/stories2.png";
+import { Props } from '@/lib/data';
 
-interface Props {
-  scrolled: number;
-}
-
-const Stories = ({scrolled}:Props) => {
+const Stories = ({scrolled, width}:Props) => {
   return (
-    <section className={` relative ${scrolled < 1350 ? "hidden" : "block"}`}>
+    <section
+      className={` relative ${
+        scrolled < 1350 && width > 1024 ? "hidden" : "block"
+      }`}
+    >
       <div className="bg-secondary pb-28">
         <div className="mx-auto max-w-[1340px] px-7 lg:px-10">
           <div className="flex flex-wrap justify-evenly">

@@ -1,17 +1,14 @@
 import React from 'react'
 import SectionWrapper from '../atoms/Reusable/SectionWrapper'
 import Playstore from '../atoms/Playstore';
+import { Props } from '@/lib/data';
 
 
-interface Props {
-    scrolled: number
-}
-
-const Venture = ({scrolled}: Props) => {
+const Venture = ({scrolled, width}: Props) => {
   return (
     <SectionWrapper
       sectionClass={`bg-primary pb-56  relative  ${
-        scrolled < 1350 ? "hidden" : "block"
+        scrolled < 1350 && width > 1024 ? "hidden" : "block"
       }`}
     >
       {" "}
