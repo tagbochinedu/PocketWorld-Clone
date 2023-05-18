@@ -46,7 +46,7 @@ const Threesvg = ({state}:AnimationState) => {
         viewBox="0 0 598 424"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="relative"
+        className="relative w-full"
       >
         <path
           d="M249.734 418.468C369.693 418.468 466.939 371.424 466.939 313.392C466.939 255.361 369.693 208.316 249.734 208.316C129.775 208.316 32.5293 255.361 32.5293 313.392C32.5293 371.424 129.775 418.468 249.734 418.468Z"
