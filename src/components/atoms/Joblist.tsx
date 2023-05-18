@@ -3,8 +3,8 @@ import { jobs } from '@/lib/data';
 
 const Joblist = () => {
   return (
-    <div className="w-7/12 pt-36 font-gtb text-white text-[48px]">
-      <div className="max-w-2xl">
+    <div className="w-full lg:w-7/12 pt-36 font-gtb text-white text-[48px]">
+      <div className="px-7 lg:max-w-2xl">
         <h5 className="relative z-20 mb-5">Today’s hottest 🔥 jobs</h5>
 
         <div className="">

@@ -28,11 +28,11 @@ setAnimationState(true)
 
   return (
     <SectionWrapper
-      sectionClass={`text-white bg-secondary pt-[180px] bg-[url('https://assets.website-files.com/616d6bd0f145779c3a8a92eb/618bbdca291add0fb9ea77ff_pocket.svg')] bg-cover bg-top relative ${
+      sectionClass={`text-white bg-secondary pt-[100px] lg:pt-[180px] bg-[url('https://assets.website-files.com/616d6bd0f145779c3a8a92eb/618bbdca291add0fb9ea77ff_pocket.svg')] bg-cover bg-top relative ${
         scrolled < 1350 ? "hidden" : "block"
       }`}
     >
-      <div className="flex justify-between relative" ref={setElement}>
+      <div className="flex justify-evenly relative" ref={setElement}>
         <Onesvg
           state={animationState}
         />

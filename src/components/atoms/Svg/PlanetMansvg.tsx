@@ -1,6 +1,10 @@
 import React from 'react'
 
-const PlanetMansvg = () => {
+interface Props {
+  className:string
+}
+
+const PlanetMansvg = ({className}:Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +12,7 @@ const PlanetMansvg = () => {
       height="399"
       viewBox="0 0 379 399"
       fill="none"
+      className={`${className}`}
     >
       <mask
         id="mask0_697:457"

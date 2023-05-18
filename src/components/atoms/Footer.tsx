@@ -9,10 +9,10 @@ const Footer = () => {
 
 
   return (
-    <footer className="fixed top-0 left-0 right-0 bottom-0 z-[-1] bg-primary pt-[80px]">
-      <div className="mx-auto max-w-[1340px] px-10 pt-16 relative">
-        <div className="relative bg-[url('https://assets.website-files.com/616d6bd0f145779c3a8a92eb/618915e4ad356e301aa4705b_footicon.svg')] h-[500px] bg-no-repeat flex text-white">
-          <div className="relative top-16 w-5/12 ml-40">
+    <footer className="relative lg:fixed lg:top-0 left-0 right-0 bottom-0 z-[-1] bg-primary lg:pt-[80px]">
+      <div className="mx-auto max-w-[1340px] px-2 lg:px-10 pt-16 relative">
+        <div className="relative bg-[url('https://assets.website-files.com/616d6bd0f145779c3a8a92eb/618915e4ad356e301aa4705b_footicon.svg')] h-[500px] bg-no-repeat flex justify-between  text-white">
+          <div className="relative top-[52px] lg:top-16 w-5/12 ml-28 lg:ml-40 mr-10 lg:mr-0">
             <Logosvg className="" />
 
             <div className="flex mt-8 mb-20">
@@ -50,7 +50,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="w-7/12 pl- relative top-[58px]">
+          <div className="w-7/12 pl- relative top-10 lg:top-[58px]">
             <h5 className="pb-8 text-2xl font-bold leading-8 font-gt">
               Follow us on
             </h5>
@@ -72,13 +72,13 @@ const Footer = () => {
               <a
                 href="https://www.linkedin.com/company/pocketworlds"
                 target="_blank"
-                className={`text-[#ea88ff] mr-[54px] text-[32px] font-black font-gtb transition-all ease-in-out duration-500 hover:text-white`}
+                className={`block lg:inline pt-5 lg:pt-0 text-[#ea88ff] mr-[54px] text-[32px] font-black font-gtb transition-all ease-in-out duration-500 hover:text-white`}
               >
                 LinkedIn
               </a>
             </div>
-            <div className="w-6/12 flex">
-              <div className="w-6/12">
+            <div className="w-8/12 lg:w-6/12 flex justify-between">
+              <div className="w-5/12">
                 <h6 className="pb-6 text-2xl font-bold font-gt">Company</h6>
                 <ul>
                   <li>

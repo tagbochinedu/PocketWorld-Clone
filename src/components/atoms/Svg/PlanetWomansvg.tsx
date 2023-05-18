@@ -1,6 +1,11 @@
 import React from 'react'
 
-const PlanetWomansvg = () => {
+
+interface Props {
+  className: string;
+}
+
+const PlanetWomansvg = ({ className }: Props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +13,7 @@ const PlanetWomansvg = () => {
       height="438"
       viewBox="0 0 409 438"
       fill="none"
+      className={`${className}`}
     >
       <path
         d="M180.94 168.796C204.928 148.265 238.105 138 280.471 138H407.999V371H280.471C239.244 371 206.351 360.346 181.794 339.037C157.237 317.728 144.971 289.321 144.999 253.816C144.999 217.666 156.979 189.326 180.94 168.796Z"
@@ -2144,6 +2150,6 @@ const PlanetWomansvg = () => {
       />
     </svg>
   );
-}
+};
 
 export default PlanetWomansvg

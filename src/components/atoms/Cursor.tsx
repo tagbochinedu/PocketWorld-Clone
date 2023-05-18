@@ -1,4 +1,4 @@
-import React, { useState, useEffect, MouseEvent } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useCursorAuth } from "@/context/CursorContext";
 
 
@@ -7,25 +7,34 @@ interface Props {
 }
 
 const Cursor = ({scrolled}: Props) => {
-    const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-    const [y, setY] = useState(0)
-    const {mouseHover} = useCursorAuth()
-   
-    
- useEffect(() => {
-   const mousemovehandler =(event: any) => {
-     const { x, y, pageY } = event;
-     setMousePosition({ x: x, y:y });
-     setY(pageY)
-    
-   }
+   const [width, setWidth] = useState({ x: 0, y: 0 });
+   const [y, setY] = useState(0)
+   const {mouseHover} = useCursorAuth()
 
-   document.addEventListener("mousemove", mousemovehandler );
+     const cursor = useRef<HTMLDivElement | null>(null!)
+     const endX = useRef(width.x)
+     const endY = useRef(width.y)
+    
+    
+ const handleResize = () => {
+      setWidth({x:window.innerWidth/2, y:window.innerWidth/2});
+    };
 
-   return () => {
-     document.removeEventListener("mousemove", mousemovehandler);
-   };
- }, [scrolled]);
+useEffect(() => {
+  const mousemovehandler =(event: any) => {
+    endX.current = event.x;
+    endY.current = event.y
+  window.addEventListener("resize", handleResize);
+    const {pageY } = event;
+    setY(pageY)  
+  }
+
+ document.addEventListener("mousemove", mousemovehandler );
+
+  return () => {
+    document.removeEventListener("mousemove", mousemovehandler);
+  };
+}, [scrolled,width]);
 
 
 
@@ -36,16 +45,16 @@ const Cursor = ({scrolled}: Props) => {
         scrolled < 1300 ? "hidden" : ""
       } ${y>9000 ? "hidden" : ""} `}
       style={{
-        left: mouseHover ? `${mousePosition.x}px` : `${mousePosition.x}px`,
-        top: mouseHover ? `${mousePosition.y}px` : `${mousePosition.y}px`,
-        transition: "all ease-out 0.3s",
+        left: `${endX.current}px`,
+        top: `${endY.current}px`,
+        transition: "all linear 0.5s",
         width: mouseHover ? "500px" : "80px",
         height: mouseHover ? "500px" : "80px",
         transform: mouseHover
           ? "translate(-250px, -250px)"
           : "translate(-40px, -40px)",
       }}
-     
+     ref={cursor}
     />
   );
 }

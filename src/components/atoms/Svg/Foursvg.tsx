@@ -4,7 +4,7 @@ import Popup from '../Reusable/Popup';
 
 const Foursvg = ({ state }: AnimationState) => {
   return (
-    <div className="relative z-20">
+    <div className="relative z-20 w-[12%] lg:w-auto top-[-60px] left-5 lg:top-0">
       
       <Popup
         divclassName={`delay-[900ms] ${
@@ -21,7 +21,7 @@ const Foursvg = ({ state }: AnimationState) => {
         viewBox="0 0 175 267"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="relative top-[130px]"
+        className="relative top-[130px] w-full"
       >
         <path
           d="M78.6572 125.967C76.6081 127.071 74.559 128.016 72.8251 129.75C70.9337 131.484 67.9388 134.006 66.0474 135.582C63.8406 137.158 61.1611 138.262 63.8406 143.936C65.7321 148.034 71.8794 148.192 74.8742 146.143C77.5538 144.251 82.2825 144.251 85.1197 142.518C89.0603 139.996 95.6804 135.267 98.2024 130.854C99.1481 129.277 98.2024 126.282 96.9414 124.706C95.6804 123.13 92.8432 122.5 90.9517 122.342C86.8536 122.027 82.2825 124.076 78.6572 125.967Z"

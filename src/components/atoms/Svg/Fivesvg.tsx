@@ -9,7 +9,7 @@ const Fivesvg = ({ state }: AnimationState) => {
       viewBox="0 0 164 286"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="relative top-[220px] z-20"
+      className="relative top-[140px] lg:top-[220px] z-20 w-[13%] lg:w-auto"
     >
       <g filter="url(#filter0_f_477:14350)">
         <ellipse cx="82" cy="248.5" rx="58" ry="13.5" fill="#00041E" />

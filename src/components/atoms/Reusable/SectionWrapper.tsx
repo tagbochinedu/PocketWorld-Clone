@@ -8,7 +8,7 @@ interface Props {
 const SectionWrapper = ({sectionClass,children}: Props) => {
   return (
     <section className={` ${sectionClass}`}>
-      <div className="mx-auto max-w-[1340px] px-10">{children}</div>
+      <div className="mx-auto max-w-[1340px] px-7 lg:px-10">{children}</div>
     </section>
   );
 }

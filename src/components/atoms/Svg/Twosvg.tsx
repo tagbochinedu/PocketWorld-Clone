@@ -4,7 +4,7 @@ import Popup from '../Reusable/Popup';
 
 const Twosvg = ({state}:AnimationState) => {
   return (
-    <div className="relative z-20">
+    <div className="relative z-20 w-[10%] lg:w-auto">
       <Popup
         divclassName={` delay-[6300ms] ${
           state ? "top-[-40px] left-[-95%] opacity-100" : "top-[8px] opacity-0"
@@ -21,7 +21,7 @@ const Twosvg = ({state}:AnimationState) => {
         viewBox="0 0 148 358"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="relative top-[10px]"
+        className="relative top-0 lg:top-[10px] w-full"
       >
         <g filter="url(#filter0_f_477:16513)">
           <ellipse cx="76" cy="320.5" rx="48" ry="13.5" fill="#00041E" />

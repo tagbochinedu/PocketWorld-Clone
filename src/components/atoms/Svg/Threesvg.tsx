@@ -5,7 +5,7 @@ import HeartOnesvg from './HeartOnesvg';
 
 const Threesvg = ({state}:AnimationState) => {
   return (
-    <div className="relative z-20">
+    <div className="relative z-20 w-4/12 top-[-50px] lg:top-0 lg:w-auto">
       <HeartOnesvg state={state} />
       <Popup
         divclassName={`delay-[3600ms] ${

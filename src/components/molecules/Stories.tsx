@@ -16,30 +16,30 @@ const Stories = ({scrolled}:Props) => {
   return (
     <section className={` relative ${scrolled < 1350 ? "hidden" : "block"}`}>
       <div className="bg-secondary pb-28">
-        <div className="mx-auto max-w-[1340px] px-10">
-          <div className="flex">
-            <div className="w-3/12">
+        <div className="mx-auto max-w-[1340px] px-7 lg:px-10">
+          <div className="flex flex-wrap justify-evenly">
+            <div className="w-5/12 lg:w-3/12 mb-10">
               <div className="relative z-20 h-[240px] flex flex-col justify-center rounded-[500px] w-11/12 mx-auto bg-primary font-gt text-[104px] font-bold leading-[126px] text-white">
                 <Koalasvg />
                 <p className="w-fit mx-auto">100</p>
                 <p className="w-fit mx-auto text-lg leading-8">People</p>
               </div>
             </div>
-            <div className="w-3/12">
+            <div className="w-5/12 lg:w-3/12">
               <div className="relative z-20 h-[240px] flex flex-col justify-center rounded-[500px] w-11/12 mx-auto bg-primary font-gt text-[104px] font-bold leading-[126px] text-white">
                 <Chickensvg />
                 <p className="w-fit mx-auto">9</p>
                 <p className="w-fit mx-auto text-lg leading-8">Timezones</p>
               </div>
             </div>
-            <div className="w-3/12">
+            <div className="w-5/12 lg:w-3/12">
               <div className="relative z-20 h-[240px] flex flex-col justify-center rounded-[500px] w-11/12 mx-auto bg-primary font-gt text-[104px] font-bold leading-[126px] text-white">
                 <Milkshakesvg />
                 <p className="w-fit mx-auto">17</p>
                 <p className="w-fit mx-auto text-lg leading-8">Countries</p>
               </div>
             </div>
-            <div className="w-3/12">
+            <div className="w-5/12 lg:w-3/12">
               <div className="relative z-20 h-[240px] flex flex-col justify-center rounded-[500px] w-11/12 mx-auto bg-primary font-gt text-[104px] font-bold leading-[126px] text-white">
                 <Dogsvg />
                 <p className="w-fit mx-auto">35</p>
@@ -50,16 +50,16 @@ const Stories = ({scrolled}:Props) => {
         </div>
       </div>
       <div className="bg-primary pt-28 pb-10 relative z-20">
-        <div className="mx-auto max-w-[1340px] px-10 text-white relative">
-          <div className="relative mb-28">
+        <div className="mx-auto max-w-[1340px] px-10 text-white relative px-7 lg:px-0">
+          <div className="relative mb-20 lg:mb-28">
             <Cubesvg />
-            <h3 className="text-[160px] font-normal leading-[140px] font-gt">
+            <h3 className="text-[120px] lg:text-[160px] font-normal leading-[100px] lg:leading-[140px] font-gt">
               Teammate <br />
               stories
             </h3>
           </div>
-          <div className="flex">
-            <div className="w-6/12 flex justify-between mr-5">
+          <div className="lg:flex">
+            <div className="w-10/12 lg:w-6/12 flex justify-between mx-auto lg:mr-5">
               <div className="w-4/12">
                 <Image src={stor1} alt="" className="w-full" />
               </div>
@@ -82,21 +82,21 @@ const Stories = ({scrolled}:Props) => {
                 </p>
               </div>
             </div>
-            <div className="w-6/12 flex justify-between ml-5 items-center relative top-[-110px]">
-              <div className="w-4/12">
+            <div className="w-full lg:w-6/12 flex justify-between lg:ml-5 items-center lg:relative top-[-110px]">
+              <div className="w-3/12 lg:w-4/12">
                 <Image src={stor2} alt="" className="w-full" />
               </div>
-              <div className="w-7/12 h-fit">
+              <div className="w-8/12 lg:w-7/12 h-fit">
                 <p className="font-gt text-base font-normal leading-6 mb-7">
-                  &quot;I love that we have a company culture where people aren’t
-                  just *allowed* to share their ideas, we’re *encouraged* to do
-                  so. Regardless of whether you’re an artist or an engineer,
-                  junior or team lead, a fresh hire or a seasoned veteran, your
-                  opinions matter.&quot;
+                  &quot;I love that we have a company culture where people
+                  aren’t just *allowed* to share their ideas, we’re *encouraged*
+                  to do so. Regardless of whether you’re an artist or an
+                  engineer, junior or team lead, a fresh hire or a seasoned
+                  veteran, your opinions matter.&quot;
                 </p>
                 <p className="text-lgg font-bold leading-8">Ryan</p>
                 <p className="font-gt text-base font-normal leading-6 opacity-70">
-                Product Manager
+                  Product Manager
                 </p>
               </div>
             </div>

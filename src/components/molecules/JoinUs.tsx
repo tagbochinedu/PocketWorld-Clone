@@ -27,21 +27,21 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
 
   return (
     <section
-      className={`bg-[#ea88ff] relative py-28 z-20 rounded-b-[120px] mb-[95vh]  ${
+      className={`bg-[#ea88ff] relative py-28 z-20 lg:rounded-b-[120px] lg:mb-[95vh]  ${
         scrolled < 1350 ? "hidden" : "block"
       }`}
     >
-      <div className="mx-auto max-w-[1340px] px-10 text-white">
-        <h2 className="text-[160px] font-normal leading-[140px] font-gt pb-64">
+      <div className="mx-auto max-w-[1340px] px-7 lg:px-10 text-white">
+        <h2 className="text-[120px] lg:text-[160px] font-normal leading-[100px] lg:leading-[140px] font-gt pb-64">
           Interested in working with us?
         </h2>
-        <div className="flex" ref={setElement}>
-          <div className="w-4/12 relative">
+        <div className="lg:flex" ref={setElement}>
+          <div className="w-full lg:w-4/12 relative">
             <Popup
-              divclassName={`${
+              divclassName={`left-[20%] lg:left-0 mx-auto ${
                 animationState
                   ? "top-[-76px] opacity-100"
-                  : "top-[-5px] opacity-0"
+                  : " top-[-5px] opacity-0"
               }`}
               nameText="pocket_magic
 "
@@ -52,11 +52,11 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
               }
               ballclassName="bottom-[-7.5px] left-[45%]"
             />
-            <PlanetMansvg />
+            <PlanetMansvg className="mx-auto" />
           </div>
-          <div className="w-4/12 flex flex-col justify-center">
+          <div className="w-full lg:w-4/12 flex flex-col justify-center pt-16 pb-44 lg:py-0">
             <h3 className="font-gtb font-black text-5xl leading-[56px] text-center mb-6">
-              Create new <br />
+              Create new <br className="hidden lg:block" />
               worlds with us.
             </h3>
             <div className="flex justify-center ">
@@ -71,11 +71,11 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
               </a>
             </div>
           </div>
-          <div className="w-4/12 relative">
+          <div className="w-full lg:w-4/12 relative">
             <Popup
-              divclassName={`delay-[900ms] ${
+              divclassName={` delay-[900ms] ${
                 animationState
-                  ? "top-[-115px] left-[30px] opacity-100 animate-chat6"
+                  ? "top-[-115px] left-[35%] lg:left-[30px] opacity-100 animate-chat6"
                   : "top-[8px] opacity-0"
               }`}
               nameText="barb_stacy78
@@ -86,7 +86,7 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
             <Popup
               divclassName={`delay-[1800ms] ${
                 animationState
-                  ? "top-[-60px] left-[30px] opacity-100 animate-chat7"
+                  ? "top-[-60px] left-[35%] lg:left-[30px] opacity-100 animate-chat7"
                   : "top-[-5px] opacity-0"
               }`}
               nameText="barb_stacy78
@@ -94,7 +94,7 @@ const JoinUs = <T extends DOMRect>({scrolled}:Props) => {
               messageText="Wild child or more subdude, you'll find your place."
               ballclassName="bottom-[-7.5px] left-[27%]"
             />
-            <PlanetWomansvg />
+            <PlanetWomansvg className="mx-auto" />
           </div>
         </div>
       </div>

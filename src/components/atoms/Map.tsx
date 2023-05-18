@@ -142,7 +142,7 @@ export default function Map() {
     pin.y - size.y / 5 + offset.y
   } ${size.x} ${size.y}`;
   return (
-    <div className="relative max-h-[800px] overflow-hidden">
+    <div className="relative max-h-[500px]  lg:max-h-[800px] overflow-hidden">
       <svg
         viewBox={viewBox}
         style={{ background: svgOptions.backgroundColor }}

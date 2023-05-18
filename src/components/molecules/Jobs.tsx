@@ -37,9 +37,9 @@ const Jobs = <T extends DOMRect>({scrolled}: Props) => {
       <Glassessvg />
       <Pizzasvg className="right-0 top-[450px] w-[236px] h-auto" />
 
-      <div className="flex">
+      <div className="flex pb-20 lg:pb-0">
         <div
-          className="w-5/12 relative top-[-95px] z-20 text-white"
+          className="w-5/12 relative top-[-95px] z-20 text-white hidden lg:block"
           ref={setElement}
         >
           <Popup
