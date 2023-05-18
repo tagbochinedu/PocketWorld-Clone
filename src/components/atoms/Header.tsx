@@ -52,7 +52,7 @@ const Header = ({ scrolled }: Props) => {
               ))}
             </ul>
           </nav>
-          <div><Image src={hamburger} alt='hamburger icon'/></div>
+          <div className="block lg:hidden"><Image src={hamburger} alt='hamburger icon'/></div>
         </div>
       </div>
     </header>
