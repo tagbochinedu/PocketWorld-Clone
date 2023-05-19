@@ -13,7 +13,11 @@ const Stories = ({scrolled, width}:Props) => {
   return (
     <section
       className={` relative ${
-        scrolled < 1350 && width > 1024 ? "hidden" : "block"
+        scrolled > 1350 && width && width > 1024
+          ? "block"
+          : scrolled >= 0 && width && width < 1024
+          ? "block"
+          : "hidden"
       }`}
     >
       <div className="bg-secondary pb-28">

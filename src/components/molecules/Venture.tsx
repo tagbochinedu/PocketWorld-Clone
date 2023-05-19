@@ -8,7 +8,11 @@ const Venture = ({scrolled, width}: Props) => {
   return (
     <SectionWrapper
       sectionClass={`bg-primary pb-56  relative  ${
-        scrolled < 1350 && width > 1024 ? "hidden" : "block"
+        scrolled > 1350 && width && width > 1024
+          ? "block"
+          : scrolled >= 0 && width && width < 1024
+          ? "block"
+          : "hidden"
       }`}
     >
       {" "}

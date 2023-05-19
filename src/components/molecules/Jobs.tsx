@@ -32,7 +32,11 @@ useEffect(() => {
   return (
     <section
       className={`bg-secondary relative ${
-        scrolled < 1350 && width > 1024 ? "hidden" : "block"
+        scrolled > 1350 && width && width > 1024
+          ? "block"
+          : scrolled >= 0 && width && width < 1024
+          ? "block"
+          : "hidden"
       }`}
     >
       <Glassessvg />

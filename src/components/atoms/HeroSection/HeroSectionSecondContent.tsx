@@ -1,27 +1,24 @@
-import React, {useState} from 'react'
-import Flagsvg from '../Svg/Flagsvg'
-import Facesvg from '../Svg/Facesvg'
-import { useCursorAuth } from '@/context/CursorContext'
+import React, { useState } from "react";
+import Flagsvg from "../Svg/Flagsvg";
+import Facesvg from "../Svg/Facesvg";
+import { useCursorAuth } from "@/context/CursorContext";
 
 const HeroSectionSecondContent = () => {
-const {enterElement} = useCursorAuth()
-
-
+  const { enterElement } = useCursorAuth();
 
   return (
     <div className="lg:min-h-[100vh] pt-28 lg:pt-48 pb-10 relative">
-      
       <div className="lg:flex items-center mb-5 relative">
-        <div
-          className="text-[14vw] lg:text-[160px] font-gt text-white lg:w-9/12 h-fit"
-          onMouseOver={() => enterElement(true)}
-          onMouseOut={() => enterElement(false)}
-        >
-          <h2 className="leading-[100px] lg:leading-[140px] font-normal  relative z-20">
+        <div className="text-[14vw] lg:text-[160px] font-gt text-white lg:w-9/12 h-fit">
+          <h2
+            className="leading-[100px] lg:leading-[140px] font-normal  relative z-20"
+            onMouseOver={() => enterElement(true)}
+            onMouseOut={() => enterElement(false)}
+          >
             Your second home in your pocket
           </h2>
         </div>
-        <div className="lg:grow w-fit ml-12 absolute lg:relative z-40 right-28 top-32">
+        <div className="lg:grow w-fit ml-12 absolute lg:relative z-40 right-28 lg:right-0  top-32 lg:top-0">
           <Flagsvg />
         </div>
       </div>
@@ -41,9 +38,8 @@ const {enterElement} = useCursorAuth()
           </p>
         </div>
       </div>
-
     </div>
   );
-}
+};
 
-export default HeroSectionSecondContent
+export default HeroSectionSecondContent;

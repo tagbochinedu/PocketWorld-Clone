@@ -18,23 +18,30 @@ import Clouds from "@/components/atoms/Reusable/Clouds";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(0);
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState<number>(0);
   const handleResize = () => {
-    setWidth(window.innerWidth);
+   if(width) {
+     setWidth(window.innerWidth);
+   }
   };
 
   const handleScroll = () => {
     setScrolled(window.scrollY);
   };
 
+    useEffect(() => {
+     setWidth(window.innerWidth);
+    }, []);
+
   useEffect(() => {
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
+    console.log(width)
   }, [scrolled, width]);
 
   return (
     <div className=" overflow-hidden">
-      <Clouds scrolled={scrolled} width={width} className={`overflow-hidden ${width<1024? 'hidden':''}`}/>
+      <Clouds scrolled={scrolled} width={width} className={`overflow-hidden ${width && width<1024? 'hidden':''}`}/>
       <Mouthsvg size={scrolled} />
       <Header scrolled={scrolled} />
       <HeroSection scrolled={scrolled} />
@@ -53,7 +60,7 @@ export default function Home() {
       <JoinUs scrolled={scrolled} width={width} />
       <Footer />
       <div
-        className={`h-[5000px] ${
+        className={`h-[5000px] ${width && 
           scrolled < 1350 && width > 1024 ? "block" : "hidden"
         }`}
       />

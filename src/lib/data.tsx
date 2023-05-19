@@ -1,6 +1,6 @@
 export interface Props {
   scrolled: number
-  width: number
+  width: number|undefined
   className?: string
 }
 

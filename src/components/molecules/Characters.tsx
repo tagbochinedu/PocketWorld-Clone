@@ -27,7 +27,7 @@ const Characters = <T extends DOMRect>({ scrolled, width }: Props) => {
   return (
     <SectionWrapper
       sectionClass={`text-white bg-secondary pt-[100px] lg:pt-[180px] bg-[url('https://assets.website-files.com/616d6bd0f145779c3a8a92eb/618bbdca291add0fb9ea77ff_pocket.svg')] bg-cover bg-top relative ${
-        scrolled < 1350 && width > 1024 ? "hidden" : "block"
+        scrolled > 1350 && width && width > 1024 ? "block" :  scrolled >= 0 && width && width < 1024?'block': "hidden"
       }`}
     >
       <div className="flex justify-evenly relative" ref={setElement}>

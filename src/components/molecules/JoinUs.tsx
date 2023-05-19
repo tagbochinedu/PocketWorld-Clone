@@ -29,7 +29,11 @@ const JoinUs = <T extends DOMRect>({scrolled, width}:Props) => {
   return (
     <section
       className={`bg-[#ea88ff] relative py-28 z-20 lg:rounded-b-[120px] lg:mb-[95vh]  ${
-        scrolled < 1350 && width > 1024 ? "hidden" : "block"
+        scrolled > 1350 && width && width > 1024
+          ? "block"
+          : scrolled >= 0 && width && width < 1024
+          ? "block"
+          : "hidden"
       }`}
     >
       <div className="mx-auto max-w-[1340px] px-7 lg:px-10 text-white">
