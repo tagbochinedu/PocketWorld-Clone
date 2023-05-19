@@ -41,7 +41,7 @@ export default function Home() {
 
   return (
     <div className=" overflow-hidden">
-      <Clouds scrolled={scrolled} width={width} className={`overflow-hidden ${width && width<1024? 'hidden':''}`}/>
+      <Clouds scrolled={scrolled} width={width} className={`overflow-hidden hidden lg:block`}/>
       <Mouthsvg size={scrolled} />
       <Header scrolled={scrolled} />
       <HeroSection scrolled={scrolled} />

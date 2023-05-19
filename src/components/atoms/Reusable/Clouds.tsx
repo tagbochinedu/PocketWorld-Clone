@@ -16,7 +16,7 @@ const Clouds = ({scrolled, width, className}:Props) => {
         src={cloud1}
         alt="floating cloud 1"
         className={`absolute lg:fixed top-[100px] w-[120px] h-20 left-[50%] opacity-90 animate-cloud1  ${
-          scrolled > 300 && width>1024 ? "hidden" : ""
+          scrolled > 300 && width && width>1024 ? "hidden" : ""
         }`}
       />
       <Image
@@ -25,7 +25,7 @@ const Clouds = ({scrolled, width, className}:Props) => {
         height={70}
         alt="floating cloud2"
         className={`absolute lg:fixed top-[100px] w-[120px] h-20 left-[10%] opacity-90 animate-cloud2 z-10 ${
-          scrolled > 300 && width>1024 ? "hidden" : ""
+          scrolled > 300 && width && width>1024 ? "hidden" : ""
         }`}
       />{" "}
       <Image
@@ -34,7 +34,7 @@ const Clouds = ({scrolled, width, className}:Props) => {
         height={140}
         alt="floating cloud 1"
         className={`absolute lg:fixed top-[200px] left-[300px] z-20 opacity-90 animate-cloud3 ${
-          scrolled > 300 && width>1024 ? "hidden" : ""
+          scrolled > 300 && width && width>1024 ? "hidden" : ""
         }`}
       />
       <Image
@@ -43,7 +43,7 @@ const Clouds = ({scrolled, width, className}:Props) => {
         height={70}
         alt="floating cloud 1"
         className={`absolute lg:fixed top-20 left-20 z-20 opacity-90 animate-cloud4 ${
-          scrolled > 300 && width>1024 ? "hidden" : ""
+          scrolled > 300 && width && width>1024 ? "hidden" : ""
         }`}
       />{" "}
       <Image
@@ -52,7 +52,7 @@ const Clouds = ({scrolled, width, className}:Props) => {
         height={70}
         alt="floating cloud 1"
         className={`absolute lg:fixed top-20 left-20 opacity-90 z-20  animate-cloud5  ${
-          scrolled > 300 && width>1024 ? "hidden" : ""
+          scrolled > 300 && width && width>1024 ? "hidden" : ""
         }`}
       />
     </div>
