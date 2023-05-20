@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useCursorAuth } from "@/context/CursorContext";
+import { useScrollAuth } from "@/context/ScrollContext";
 
-interface Props {
-  scrolled: number;
-}
 
-const Cursor = ({ scrolled }: Props) => {
+const Cursor = () => {
+   const { scrolled } = useScrollAuth();
   const [y, setY] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const { mouseHover } = useCursorAuth();

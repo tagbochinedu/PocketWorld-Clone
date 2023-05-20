@@ -7,15 +7,14 @@ import Dogsvg from "../atoms/Svg/Dogsvg";
 import Cubesvg from '../atoms/Svg/Cubesvg';
 import stor1 from '../../../public/stories1.png'
 import stor2 from "../../../public/stories2.png";
-import { Props } from '@/lib/data';
+import { useScrollAuth } from "@/context/ScrollContext";
 
-const Stories = ({scrolled, width}:Props) => {
+const Stories = () => {
+    const { char } = useScrollAuth();
   return (
     <section
       className={` relative ${
-        scrolled > 1350 && width && width > 1024
-          ? "block"
-          : scrolled >= 0 && width && width < 1024
+        char
           ? "block"
           : "hidden"
       }`}

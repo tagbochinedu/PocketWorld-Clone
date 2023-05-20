@@ -5,16 +5,16 @@ import Joblist from '../atoms/Joblist'
 import Glassessvg from '../atoms/Svg/Glassessvg'
 import Pizzasvg from '../atoms/Svg/Pizzasvg'
 import Popup from '../atoms/Reusable/Popup'
-import { Props } from '@/lib/data'
+import { useScrollAuth } from "@/context/ScrollContext";
 
-
-const Jobs = <T extends DOMRect>({scrolled, width}: Props) => {
-
+const Jobs = <T extends DOMRect>() => {
+const { char, scrolled } = useScrollAuth();
   const [element, setElement] = useState<HTMLDivElement | null>(null);
   const [rect, setRect] = useState<T | null>(null);
   const [animationState, setAnimationState] = useState(false);
 
-const animate = useCallback(() => {
+
+useEffect(() => {
   if (element) {
     const container = element.getBoundingClientRect();
     setRect(container as T);
@@ -22,19 +22,13 @@ const animate = useCallback(() => {
       setAnimationState(true);
     }
   }
-}, [rect, scrolled, element]);
-
-useEffect(() => {
-  animate();
 }, [scrolled]);
 
-
+    
   return (
     <section
       className={`bg-secondary relative ${
-        scrolled > 1350 && width && width > 1024
-          ? "block"
-          : scrolled >= 0 && width && width < 1024
+       char
           ? "block"
           : "hidden"
       }`}

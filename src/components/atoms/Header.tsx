@@ -4,33 +4,13 @@ import hamburger from '../../../public/hamburger.svg'
 import { navlinks } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
+import { useScrollAuth } from "@/context/ScrollContext";
 
-interface Props {
-  scrolled: number;
-}
 
-const Header = ({ scrolled }: Props) => {
-  const [navInView, setNavInView] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
+const Header = () => {
   
-
-  useEffect(() => {
+  const { navInView } = useScrollAuth();
   
-    // only trigger if scrolled more than delta
-    if (Math.abs(lastScrollY - scrolled)) {
-      // scroll down -> hide nav bar
-      if (scrolled > lastScrollY) {
-        setNavInView(false);
-      }
-      // scroll up -> show nav bar
-      else if (scrolled < lastScrollY) {
-        setNavInView(true);
-      }
-      setLastScrollY(scrolled);
-   
-  }
-  }, [scrolled, lastScrollY]);
 
   return (
     <header

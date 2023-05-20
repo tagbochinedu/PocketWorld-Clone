@@ -1,17 +1,16 @@
-import React, {useEffect, useState, useCallback} from 'react'
-import PlanetMansvg from '../atoms/Svg/PlanetMansvg';
-import PlanetWomansvg from '../atoms/Svg/PlanetWomansvg';
-import Popup from '../atoms/Reusable/Popup';
-import { Props } from '@/lib/data';
+import React, { useEffect, useState, useCallback } from "react";
+import PlanetMansvg from "../atoms/Svg/PlanetMansvg";
+import PlanetWomansvg from "../atoms/Svg/PlanetWomansvg";
+import Popup from "../atoms/Reusable/Popup";
+import { useScrollAuth } from "@/context/ScrollContext";
 
-const JoinUs = <T extends DOMRect>({scrolled, width}:Props) => {
-
+const JoinUs = <T extends DOMRect>() => {
+  const { char, scrolled } = useScrollAuth();
   const [element, setElement] = useState<HTMLDivElement | null>(null);
   const [rect, setRect] = useState<T | null>(null);
   const [animationState, setAnimationState] = useState(false);
 
-
- const animate = useCallback(() => {
+  useEffect(() => {
    if (element) {
      const container = element.getBoundingClientRect();
      setRect(container as T);
@@ -19,21 +18,12 @@ const JoinUs = <T extends DOMRect>({scrolled, width}:Props) => {
        setAnimationState(true);
      }
    }
- }, [rect, scrolled, element]);
-
- useEffect(() => {
-   animate();
- }, [scrolled]);
-
+  }, [scrolled]);
 
   return (
     <section
       className={`bg-[#ea88ff] relative py-28 z-20 lg:rounded-b-[120px] lg:mb-[95vh]  ${
-        scrolled > 1350 && width && width > 1024
-          ? "block"
-          : scrolled >= 0 && width && width < 1024
-          ? "block"
-          : "hidden"
+        char ? "block" : "hidden"
       }`}
     >
       <div className="mx-auto max-w-[1340px] px-7 lg:px-10 text-white">
@@ -105,6 +95,6 @@ const JoinUs = <T extends DOMRect>({scrolled, width}:Props) => {
       </div>
     </section>
   );
-}
+};
 
-export default JoinUs
+export default JoinUs;

@@ -1,16 +1,14 @@
 import React from 'react'
 import SectionWrapper from '../atoms/Reusable/SectionWrapper'
 import Playstore from '../atoms/Playstore';
-import { Props } from '@/lib/data';
+import { useScrollAuth } from "@/context/ScrollContext";
 
-
-const Venture = ({scrolled, width}: Props) => {
+const Venture = () => {
+    const { char } = useScrollAuth();
   return (
     <SectionWrapper
       sectionClass={`bg-primary pb-56  relative  ${
-        scrolled > 1350 && width && width > 1024
-          ? "block"
-          : scrolled >= 0 && width && width < 1024
+        char
           ? "block"
           : "hidden"
       }`}
