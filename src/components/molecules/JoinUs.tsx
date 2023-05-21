@@ -27,7 +27,7 @@ const JoinUs = <T extends DOMRect>() => {
       }`}
     >
       <div className="mx-auto max-w-[1340px] px-7 lg:px-10 text-white">
-        <h2 className="text-[120px] lg:text-[160px] font-normal leading-[100px] lg:leading-[140px] font-gt pb-64">
+        <h2 className="text-[120px] lg:text-[160px] font-normal leading-[100px] lg:leading-[140px] font-gt pb-32 lg:pb-64">
           Interested in working with us?
         </h2>
         <div className="lg:flex" ref={setElement}>
@@ -73,8 +73,7 @@ const JoinUs = <T extends DOMRect>() => {
                   ? "top-[-115px] left-[35%] lg:left-[30px] opacity-100 animate-chat6"
                   : "top-[8px] opacity-0"
               }`}
-              nameText="barb_stacy78
-"
+              nameText="barb_stacy78"
               messageText="Join us!"
               ballclassName="bottom-[-7.5px] left-[27%] hidden"
             />{" "}
@@ -84,8 +83,7 @@ const JoinUs = <T extends DOMRect>() => {
                   ? "top-[-60px] left-[35%] lg:left-[30px] opacity-100 animate-chat7"
                   : "top-[-5px] opacity-0"
               }`}
-              nameText="barb_stacy78
-"
+              nameText="barb_stacy78"
               messageText="Wild child or more subdude, you'll find your place."
               ballclassName="bottom-[-7.5px] left-[27%]"
             />

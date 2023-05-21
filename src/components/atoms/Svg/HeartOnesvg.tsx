@@ -4,13 +4,11 @@ import { AnimationState } from "@/lib/data";
 const HeartOnesvg = ({state}:AnimationState ) => {
   return (
     <svg
-      width="53"
-      height="45"
       viewBox="0 0 53 45"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={`absolute transition-all ease-in-out duration-[650ms] delay-[2700ms] ${
-        state ? "top-[-55px] left-[67%] opacity-100" : "top-[0px] opacity-0"
+      className={`w-[35px] lg:w-[53px] h-auto lg:h-[45px]  absolute transition-all ease-in-out duration-[650ms] delay-[2700ms] ${
+        state ? "top-[15%] lg:top-[-15%] left-[65%] lg:left-[67%] opacity-100" : "top-[25%] lg:top-[-5%] opacity-0"
       }`}
     >
       <path

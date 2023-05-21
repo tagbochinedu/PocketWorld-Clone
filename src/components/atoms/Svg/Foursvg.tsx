@@ -8,11 +8,11 @@ const Foursvg = ({ state }: AnimationState) => {
       
       <Popup
         divclassName={`delay-[900ms] ${
-          state ? "top-[70px] opacity-100" : "top-[118px] opacity-0"
+          state ? "top-[33%] lg:top-[15%] opacity-100" : "top-[43%] lg:top-[25%] opacity-0"
         }`}
         nameText="rabbit_b1
 "
-        messageText="Who wanna go to a party?"
+        messageText="Party time?"
         ballclassName="bottom-[-7.5px] left-[27%]"
       />
       <svg

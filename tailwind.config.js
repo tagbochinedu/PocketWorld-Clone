@@ -32,8 +32,11 @@ module.exports = {
         cloud4: "cloud4 50s linear infinite",
         cloud5: "cloud5 50s linear infinite",
         chat1: "chat1 2450ms linear 3600ms 1 ",
+        chat1res: "chat1res 2450ms linear 3600ms 1 ",
         chat2: "chat2 1550ms linear 4500ms 1 ",
+        chat2res: "chat2res 1550ms linear 4500ms 1 ",
         chat3: "chat3 650ms linear 5400ms 1 ",
+        chat3res: "chat3res 650ms linear 5400ms 1 ",
         chat4: "chat4 1550ms linear 1 ",
         chat5: "chat5 650ms linear 900ms 1 ",
         chat6: "chat2 1550ms linear 900ms 1 ",
@@ -147,6 +150,32 @@ module.exports = {
             opacity: "1",
           },
         },
+        chat1res: {
+          "0%": {
+            top: "25%",
+            opacity: "0",
+          },
+          "26.5%": {
+            top: "15%",
+            opacity: "1",
+          },
+          "36.7%": {
+            top: "15%",
+            opacity: "1",
+          },
+          "63.3%": {
+            top: "5%",
+            opacity: "1",
+          },
+          "73.5%": {
+            top: "5%",
+            opacity: "1",
+          },
+          "100%": {
+            top: "-5%",
+            opacity: "1",
+          },
+        },
         chat2: {
           "0%": {
             top: "-5px",
@@ -166,6 +195,24 @@ module.exports = {
             opacity: "1",
           },
         },
+        chat2res: {
+          "0%": {
+            top: "25%",
+            opacity: "0",
+          },
+          "42%": {
+            top: "15%",
+            opacity: "1",
+          },
+          "58%": {
+            top: "15%",
+            opacity: "1",
+          },
+          "100%": {
+            top: "5%",
+            opacity: "1",
+          },
+        },
         chat3: {
           "0%": {
             top: "-5px",
@@ -175,6 +222,17 @@ module.exports = {
 
           "100%": {
             top: "-60px",
+            opacity: "1",
+          },
+        },
+        chat3res: {
+          "0%": {
+            top: "25%",
+            opacity: "0",
+          },
+
+          "100%": {
+            top: "15%",
             opacity: "1",
           },
         },

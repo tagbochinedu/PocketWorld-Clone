@@ -8,7 +8,7 @@ const Onesvg = ({state}:AnimationState) => {
      
       <Popup
         divclassName={`${
-          state ? "top-[96px] opacity-100" : "top-[118px] opacity-0"
+          state ? "top-[40%] lg:top-[25%] opacity-100" : "top-[50%] lg:top-[35%] opacity-0"
         }`}
         nameText="ann19"
         messageText="hey! xx"

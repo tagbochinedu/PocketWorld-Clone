@@ -7,7 +7,7 @@ const Twosvg = ({state}:AnimationState) => {
     <div className="relative z-20 w-[10%] lg:w-auto">
       <Popup
         divclassName={` delay-[6300ms] ${
-          state ? "top-[-40px] left-[-95%] opacity-100" : "top-[8px] opacity-0"
+          state ? "top-[10%] lg:top-[-10%] left-[-190%] lg:left-[-95%] opacity-100" : "top-[20%] lg:top-[0%] opacity-0"
         }`}
         nameText="whaleking_11
 

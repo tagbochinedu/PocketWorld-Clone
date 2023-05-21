@@ -9,7 +9,7 @@ const Threesvg = ({state}:AnimationState) => {
       <HeartOnesvg state={state} />
       <Popup
         divclassName={`delay-[3600ms] ${
-          state ? "top-[-170px] left-[30px] opacity-100 animate-chat1" : "top-[8px] opacity-0"
+          state ? "top-[-5%] lg:top-[-170px] lg:left-[30px] opacity-100 animate-chat1res lg:animate-chat1" : "top-[8px] opacity-0"
         }`}
         nameText="beastyyy
 "
@@ -18,7 +18,7 @@ const Threesvg = ({state}:AnimationState) => {
       />{" "}
       <Popup
         divclassName={`delay-[4500ms] ${
-          state ? "top-[-115px] left-[30px] opacity-100 animate-chat2" : "top-[8px] opacity-0"
+          state ? "top-[5%] lg:top-[-115px] lg:left-[30px] opacity-100 animate-chat2res lg:animate-chat2" : "top-[15%] lg:top-[8px] opacity-0"
         }`}
         nameText="beastyyy"
         messageText="meh"
@@ -26,19 +26,19 @@ const Threesvg = ({state}:AnimationState) => {
       />{" "}
       <Popup
         divclassName={`delay-[5400ms] ${
-          state ? "top-[-60px] left-[30px] opacity-100 animate-chat3" : "top-[-5px] opacity-0"
+          state ? "top-[15%] lg:top-[-60px] lg:left-[30px] opacity-100 animate-chat3res lg:animate-chat3" : "top-[-5px] opacity-0"
         }`}
         nameText="beastyyy"
-        messageText="does it mean im cool??"
-        ballclassName="bottom-[-7.5px] left-[27%]"
+        messageText="am I cool??"
+        ballclassName="bottom-[-7.5px] left-[20%] lg:left-[27%]"
       />
       <Popup
         divclassName={`delay-[1800ms] ${
-          state ? "top-[-40px] left-[80%] opacity-100" : "top-[8px] opacity-0"
+          state ? "top-[20%] lg:top-[-5%] left-[80%] opacity-100" : "top-[25%] lg:top-[5%] opacity-0"
         }`}
         nameText="jakykae"
-        messageText="love your slippers dude 🔥"
-        ballclassName="bottom-[-7.5px] left-[27%]"
+        messageText="cool slippers dude 🔥"
+        ballclassName="bottom-[-7.5px] left-[10%] lg:left-[27%]"
       />
       <svg
         width="598"
