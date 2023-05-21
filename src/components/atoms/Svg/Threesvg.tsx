@@ -9,7 +9,7 @@ const Threesvg = ({state}:AnimationState) => {
       <HeartOnesvg state={state} />
       <Popup
         divclassName={`delay-[3600ms] ${
-          state ? "top-[-5%] lg:top-[-170px] lg:left-[30px] opacity-100 animate-chat1res lg:animate-chat1" : "top-[8px] opacity-0"
+          state ? "top-[-15%] lg:top-[-170px] lg:left-[30px] opacity-100 animate-chat1res lg:animate-chat1" : "top-[8px] opacity-0"
         }`}
         nameText="beastyyy
 "
@@ -18,7 +18,7 @@ const Threesvg = ({state}:AnimationState) => {
       />{" "}
       <Popup
         divclassName={`delay-[4500ms] ${
-          state ? "top-[5%] lg:top-[-115px] lg:left-[30px] opacity-100 animate-chat2res lg:animate-chat2" : "top-[15%] lg:top-[8px] opacity-0"
+          state ? "top-[-5%] lg:top-[-115px] lg:left-[30px] opacity-100 animate-chat2res lg:animate-chat2" : "top-[10%] lg:top-[8px] opacity-0"
         }`}
         nameText="beastyyy"
         messageText="meh"
@@ -26,7 +26,7 @@ const Threesvg = ({state}:AnimationState) => {
       />{" "}
       <Popup
         divclassName={`delay-[5400ms] ${
-          state ? "top-[15%] lg:top-[-60px] lg:left-[30px] opacity-100 animate-chat3res lg:animate-chat3" : "top-[-5px] opacity-0"
+          state ? "top-[5%] lg:top-[-60px] lg:left-[30px] opacity-100 animate-chat3res lg:animate-chat3" : "top-[15%] opacity-0"
         }`}
         nameText="beastyyy"
         messageText="am I cool??"

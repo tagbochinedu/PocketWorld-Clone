@@ -8,7 +8,7 @@ const HeartOnesvg = ({state}:AnimationState ) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`w-[35px] lg:w-[53px] h-auto lg:h-[45px]  absolute transition-all ease-in-out duration-[650ms] delay-[2700ms] ${
-        state ? "top-[15%] lg:top-[-15%] left-[65%] lg:left-[67%] opacity-100" : "top-[25%] lg:top-[-5%] opacity-0"
+        state ? " top-[10%] md:top-[15%] lg:top-[-15%] left-[65%] lg:left-[67%] opacity-100" : "top-[20%] md:top-[25%] lg:top-[-5%] opacity-0"
       }`}
     >
       <path

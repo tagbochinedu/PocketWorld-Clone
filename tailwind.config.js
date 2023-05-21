@@ -152,27 +152,27 @@ module.exports = {
         },
         chat1res: {
           "0%": {
-            top: "25%",
+            top: "15%",
             opacity: "0",
           },
           "26.5%": {
-            top: "15%",
+            top: "5%",
             opacity: "1",
           },
           "36.7%": {
-            top: "15%",
+            top: "5%",
             opacity: "1",
           },
           "63.3%": {
-            top: "5%",
+            top: "-5%",
             opacity: "1",
           },
           "73.5%": {
-            top: "5%",
+            top: "-5%",
             opacity: "1",
           },
           "100%": {
-            top: "-5%",
+            top: "-15%",
             opacity: "1",
           },
         },
@@ -197,19 +197,19 @@ module.exports = {
         },
         chat2res: {
           "0%": {
-            top: "25%",
+            top: "15%",
             opacity: "0",
           },
           "42%": {
-            top: "15%",
+            top: "5%",
             opacity: "1",
           },
           "58%": {
-            top: "15%",
+            top: "5%",
             opacity: "1",
           },
           "100%": {
-            top: "5%",
+            top: "-5%",
             opacity: "1",
           },
         },
@@ -227,12 +227,12 @@ module.exports = {
         },
         chat3res: {
           "0%": {
-            top: "25%",
+            top: "15%",
             opacity: "0",
           },
 
           "100%": {
-            top: "15%",
+            top: "5%",
             opacity: "1",
           },
         },
