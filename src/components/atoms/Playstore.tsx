@@ -43,7 +43,7 @@ const Playstore = () => {
           Learn more
         </a>
       </div>
-      <div className='text-[#f1f8ff] bg-secondary h-auto lg:h-[560px] rounded-[40px] bg-[url("https://assets.website-files.com/616d6bd0f145779c3a8a92eb/616e95ffb75313b8200b4038_everskiesbg.png")] bg-cover px-5 md:px-[60px] pt-20 pb-10 md:py-[30px] mt-10 md:mt-20 flex justify-center flex-col relative z-20'>
+      <div className='text-[#f1f8ff] h-auto lg:h-[560px] rounded-[40px] bg-[url("https://assets.website-files.com/616d6bd0f145779c3a8a92eb/616e95ffb75313b8200b4038_everskiesbg.png")] bg-cover px-5 md:px-[60px] pt-20 pb-10 md:py-[30px] mt-10 md:mt-20 flex justify-center flex-col relative z-20'>
         <div className="">
           <Image src={ever} alt="high rise" className="w-[327px] mb-9" />
           <p className="font-normal leading-7 text-lg md:w-[480px] font-gt">
