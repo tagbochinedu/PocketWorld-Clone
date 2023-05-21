@@ -5,7 +5,7 @@ import { useScrollAuth } from "@/context/ScrollContext";
 
 
 const HeroSection = () => {
-  const { scrolled, hero } = useScrollAuth();
+  const { hero } = useScrollAuth();
   return (
     <SectionWrapper
       sectionClass={`hidden lg:block ${
@@ -17,7 +17,7 @@ const HeroSection = () => {
       }`}
      
     >
-      {scrolled <= 1300 ? (
+      {hero === '1' ? (
         <HeroSectionFirstContent />
       ) : (
         <HeroSectionSecondContent />

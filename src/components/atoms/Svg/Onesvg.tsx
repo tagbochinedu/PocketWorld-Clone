@@ -4,7 +4,7 @@ import Popup from '../Reusable/Popup';
 
 const Onesvg = ({state}:AnimationState) => {
   return (
-    <div className="relative z-20 w-2/12 top-[-40px] lg:top-0 lg:w-auto">
+    <div className=" hidden md:block relative z-20 w-2/12 top-[-40px] lg:top-0 lg:w-auto">
      
       <Popup
         divclassName={`${

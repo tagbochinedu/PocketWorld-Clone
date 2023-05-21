@@ -9,9 +9,9 @@ const HeroSectionSecondContent = () => {
   return (
     <div className="lg:min-h-[100vh] pt-28 lg:pt-48 pb-10 relative">
       <div className="lg:flex items-center mb-5 relative">
-        <div className="text-[14vw] lg:text-[160px] font-gt text-white lg:w-9/12 h-fit">
+        <div className="text-[60px] md:text-[14vw] lg:text-[160px] font-gt text-white lg:w-9/12 h-fit">
           <h2
-            className="leading-[100px] lg:leading-[140px] font-normal  relative z-20"
+            className="leading-[50px] md:leading-[100px] lg:leading-[140px] font-normal  relative z-20"
             onMouseOver={() => enterElement(true)}
             onMouseOut={() => enterElement(false)}
           >
@@ -22,16 +22,16 @@ const HeroSectionSecondContent = () => {
           <Flagsvg />
         </div>
       </div>
-      <div className="flex">
-        <div className="w-3/12 lg:w-6/12 justify-end flex lg:pr-10 relative z-30">
+      <div className="md:flex">
+        <div className="w-1/2 mx-auto md:w-3/12 lg:w-6/12 justify-end flex lg:pr-10 relative z-30">
           <Facesvg />
         </div>
-        <div className="w-9/12 lg:w-6/12 text-white relative z-30">
-          <h5 className="text-5xl font-gtb  font-black leading-[56px] mb-6">
+        <div className="md:w-9/12 lg:w-6/12 text-white relative z-30">
+          <h5 className="text-[48px] md:text-5xl font-gtb  font-black leading-[56px] mb-6">
             Our mission is to empower creativity and connection in a digital
             world.
           </h5>
-          <p className="text-xl leading-[32px] font-normal font-gt">
+          <p className=" text-xl md:leading-[32px] font-normal font-gt">
             We are a metaverse company that brings people together through play.
             Our intricate, rich worlds are social by design and built to last
             for decades.

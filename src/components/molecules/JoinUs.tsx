@@ -27,11 +27,11 @@ const JoinUs = <T extends DOMRect>() => {
       }`}
     >
       <div className="mx-auto max-w-[1340px] px-7 lg:px-10 text-white">
-        <h2 className="text-[120px] lg:text-[160px] font-normal leading-[100px] lg:leading-[140px] font-gt pb-32 lg:pb-64">
+        <h2 className="text-[64px] md:text-[120px] lg:text-[160px] font-normal leading-[72px] leading-[100px] lg:leading-[140px] font-gt pb-32 lg:pb-64">
           Interested in working with us?
         </h2>
         <div className="lg:flex" ref={setElement}>
-          <div className="w-full lg:w-4/12 relative">
+          <div className="hidden md:block md:w-full lg:w-4/12 relative">
             <Popup
               divclassName={`left-[20%] lg:left-0 mx-auto ${
                 animationState
@@ -49,7 +49,7 @@ const JoinUs = <T extends DOMRect>() => {
             />
             <PlanetMansvg className="mx-auto" />
           </div>
-          <div className="w-full lg:w-4/12 flex flex-col justify-center pt-16 pb-44 lg:py-0">
+          <div className="w-full lg:w-4/12 flex flex-col justify-center md:pt-16 md:pb-44 lg:py-0">
             <h3 className="font-gtb font-black text-5xl leading-[56px] text-center mb-6">
               Create new <br className="hidden lg:block" />
               worlds with us.
@@ -66,7 +66,7 @@ const JoinUs = <T extends DOMRect>() => {
               </a>
             </div>
           </div>
-          <div className="w-full lg:w-4/12 relative">
+          <div className="hidden md:block w-full lg:w-4/12 relative">
             <Popup
               divclassName={` delay-[900ms] ${
                 animationState

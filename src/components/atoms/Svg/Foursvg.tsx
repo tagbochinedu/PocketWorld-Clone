@@ -4,7 +4,7 @@ import Popup from '../Reusable/Popup';
 
 const Foursvg = ({ state }: AnimationState) => {
   return (
-    <div className="relative z-20 w-[12%] lg:w-auto top-[-60px] left-5 lg:top-0">
+    <div className="hidden md:block relative z-20 w-[12%] lg:w-auto top-[-60px] left-5 lg:top-0">
       
       <Popup
         divclassName={`delay-[900ms] ${

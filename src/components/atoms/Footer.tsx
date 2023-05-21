@@ -9,13 +9,13 @@ const Footer = () => {
 
 
   return (
-    <footer className="relative lg:fixed lg:top-0 left-0 right-0 bottom-0 z-[-1] bg-primary lg:pt-[80px]">
+    <footer className="static lg:fixed lg:top-0 lg:left-0 lg:right-0 bottom-0 z-[-1] bg-primary lg:pt-[80px] px-7 overflow-scroll">
       <div className="mx-auto max-w-[1340px] px-2 lg:px-10 pt-16 relative">
-        <div className="relative bg-[url('https://assets.website-files.com/616d6bd0f145779c3a8a92eb/618915e4ad356e301aa4705b_footicon.svg')] h-[500px] bg-no-repeat flex justify-between  text-white">
-          <div className="relative top-[52px] lg:top-16 w-5/12 ml-28 lg:ml-40 mr-10 lg:mr-0">
+        <div className="relative md:bg-[url('https://assets.website-files.com/616d6bd0f145779c3a8a92eb/618915e4ad356e301aa4705b_footicon.svg')] min-h-[500px] bg-no-repeat md:flex justify-between  text-white">
+          <div className="relative md:top-[52px] lg:top-16 md:w-5/12 md:ml-28 lg:ml-40 md:mr-10 lg:mr-0">
             <Logosvg className="" />
 
-            <div className="flex mt-8 mb-20">
+            <div className="flex mt-8 mb-10 md:mb-20">
               <a
                 href="https://highrise.sng.link/Cxfcy/lm1ev?_dl=https%3A%2F%2Fjoinhighrise.com%2Fplay&amp;_smtype=3&amp;pscn=store_button_ios&amp;pcn=landing"
                 target="_blank"
@@ -50,7 +50,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="w-7/12 pl- relative top-10 lg:top-[58px]">
+          <div className="md:w-7/12 pl- relative top-10 lg:top-[58px]">
             <h5 className="pb-8 text-2xl font-bold leading-8 font-gt">
               Follow us on
             </h5>
@@ -65,7 +65,7 @@ const Footer = () => {
               <a
                 href="https://www.instagram.com/highrise/"
                 target="_blank"
-                className={`text-[#ea88ff] mr-[54px] text-[32px] font-black font-gtb transition-all ease-in-out duration-500 hover:text-white`}
+                className={`block md:inline pt-5 md:pt-0 text-[#ea88ff] mr-[54px] text-[32px] font-black font-gtb transition-all ease-in-out duration-500 hover:text-white`}
               >
                 Instagram
               </a>
@@ -121,7 +121,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t-[1px] border-[rgba(255,197,197,0.16)] py-8 w-full">
+        <div className="border-t-[1px] border-[rgba(255,197,197,0.16)] mt-20 md:mt-0 py-8 w-full">
           <p className="text-sm font-gt text-[rgba(255,255,255,0.65)]">
             Pocket Worlds. Copyright 2023
           </p>

@@ -4,7 +4,7 @@ import Popup from '../Reusable/Popup';
 
 const Twosvg = ({state}:AnimationState) => {
   return (
-    <div className="relative z-20 w-[10%] lg:w-auto">
+    <div className="hidden md:block relative z-20 w-[10%] lg:w-auto">
       <Popup
         divclassName={` delay-[6300ms] ${
           state ? "top-[10%] lg:top-[-10%] left-[-190%] lg:left-[-95%] opacity-100" : "top-[20%] lg:top-[0%] opacity-0"

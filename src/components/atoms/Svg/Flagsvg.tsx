@@ -8,7 +8,7 @@ const Flagsvg = () => {
       height="149"
       viewBox="0 0 125 149"
       fill="none"
-      className='absolute -top-[200px]'
+      className='w-[80px] md:w-[125px] h-auto absolute -top-[200px]'
     >
       <g clip-path="url(#clip0_443:11766)">
         <path

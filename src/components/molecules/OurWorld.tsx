@@ -11,7 +11,7 @@ const TextSection =()=>{
     <div className="lg:flex justify-center items-end">
       <div className="lg:w-5/12 pb-5 lg:pb-0">
         <h2
-          className="lg:max-w-lg text-[14vw] lg:text-[160px] font-normal leading-[100px] lg:leading-[140px] font-gt text-white relative z-20"
+          className="lg:max-w-lg text-[60px] md:text-[14vw] lg:text-[160px] font-normal leading-[50px] md:leading-[100px] lg:leading-[140px] font-gt text-white relative z-20"
           onMouseOver={() => enterElement(true)}
           onMouseOut={() => enterElement(false)}
         >
