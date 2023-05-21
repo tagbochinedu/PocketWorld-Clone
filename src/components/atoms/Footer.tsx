@@ -9,7 +9,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="static lg:fixed lg:top-0 lg:left-0 lg:right-0 bottom-0 z-[-1] bg-primary lg:pt-[80px] px-7 overflow-scroll">
+    <footer className="static lg:fixed lg:top-0 lg:left-0 lg:right-0 bottom-0 z-[-1] bg-primary lg:pt-[80px] px-7">
       <div className="mx-auto max-w-[1340px] px-2 lg:px-10 pt-16 relative">
         <div className="relative md:bg-[url('https://assets.website-files.com/616d6bd0f145779c3a8a92eb/618915e4ad356e301aa4705b_footicon.svg')] min-h-[500px] bg-no-repeat md:flex justify-between  text-white">
           <div className="relative md:top-[52px] lg:top-16 md:w-5/12 md:ml-28 lg:ml-40 md:mr-10 lg:mr-0">

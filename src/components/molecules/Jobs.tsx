@@ -62,7 +62,7 @@ useEffect(() => {
             messageText="r u going to apply??"
             ballclassName="bottom-[-7.5px] left-[75%]"
           />{" "}
-          <span className="absolute"> hello</span>
+
           <Image
             src={balloon}
             alt="balloon monster"
