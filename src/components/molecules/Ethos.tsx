@@ -33,7 +33,7 @@ const Ethos = () => {
           your mark?
         </p>
       </div>
-      <div className="pt-28 md:pt-[240px] pb-10 md:pb-20 md:mb-8 md:flex flex-wrap border-b border-b-white">
+      <div className="pt-28 md:pt-[240px] md:pb-20 md:mb-8 md:flex flex-wrap border-b border-b-white">
         {ethos.map((etho) => (
           <div
             key={etho.id}
