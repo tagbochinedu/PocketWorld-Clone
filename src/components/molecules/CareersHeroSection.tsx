@@ -117,7 +117,7 @@ const CareersHeroSection = () => {
             alt=""
             className="hidden md:block absolute -bottom-10 right-5 lg:-right-5 rotate-[10deg] w-16 lg:w-auto h-auto"
           />
-          <h4 className="text-[30px] md:text-[48px] leading-10 leading-[56px] max-w-[570px] lg:max-w-[550px] font-gtb font-black">
+          <h4 className="text-[30px] md:text-[48px] leading-10 md:leading-[56px] max-w-[570px] lg:max-w-[550px] font-gtb font-black">
             We believe in giving top talent the opportunity to do the best, most
             creative work of their lives with full autonomy and support.
           </h4>
