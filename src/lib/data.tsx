@@ -1,3 +1,8 @@
+import clock from '../../public/clock.svg'
+import earth from "../../public/earth.svg";
+import puzzle from "../../public/puzzle.svg";
+import map from "../../public/map.svg";
+
 export interface Props {
   scrolled: number
   width: number|undefined
@@ -65,5 +70,33 @@ export const locations: string[] = [
   "Buenos Aires, Argentina",
 ];
 
+
+//Ethos careers page 
+export const ethos = [
+  {
+    id: 1,
+    img: clock,
+    title: "Experimentation.",
+    desc: "We push boundaries by testing, validating, and iterating on new ideas, processes, and strategies.",
+  },
+  {
+    id: 2,
+    img: earth,
+    title: "Creator-focused.",
+    desc: "We enable people all over the world to fully express their creativity in immersive, digital worlds.",
+  },
+  {
+    id: 3,
+    title: "Play.",
+    img: puzzle,
+    desc: "Through immersive gameplay, we unleash creativity, imagination, and collaboration.",
+  },
+  {
+    id: 4,
+    title: "Belonging.",
+    img: map,
+    desc: "We cultivate inclusive environments that empower individuals and build thriving societies.",
+  },
+];
 
 

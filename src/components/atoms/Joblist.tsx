@@ -3,7 +3,7 @@ import { jobs } from "@/lib/data";
 
 const Joblist = () => {
   return (
-    <div className="w-full lg:w-7/12 pt-36 font-gtb text-white text-[48px]">
+    <div className="w-full lg:w-7/12 pt-36 font-gtb text-white text-[48px] relative z-[10]">
       <div className="px-7 lg:max-w-2xl">
         <h5 className="relative z-20 mb-5">Today’s hottest 🔥 jobs</h5>
 
@@ -21,7 +21,7 @@ const Joblist = () => {
                 </div>
                 <div>
                   <a href={job.link} target="_blank" className="">
-                    <button className="w-full md:w-auto rounded-full bg-primary py-3 w-36 text-base font-bold font-gt group-hover:shadow-joblist relative top-[0px] left-[0px] group-hover:shadow-joblist group-hover:top-[5px] group-hover:left-[5px] group-hover:text-secondary transition-all ease-linear duration-[250ms]">
+                    <button className="w-full md:w-36 rounded-full bg-primary py-3 text-base font-bold font-gt group-hover:shadow-joblist relative top-[0px] left-[0px] group-hover:shadow-joblist group-hover:top-[5px] group-hover:left-[5px] group-hover:text-secondary transition-all ease-linear duration-[250ms]">
                       Apply
                     </button>{" "}
                   </a>

@@ -21,7 +21,7 @@ export default function Home() {
     <div className=" overflow-hidden">
       <Clouds className='overflow-hidden hidden lg:block'/>
       <Mouthsvg  />
-      <Header />
+      
       <HeroSection />
       <SectionWrapper sectionClass="block lg:hidden bg-primary relative">
         <Clouds className='absolute h-32 w-full top-40 overflow-hidden ' />
@@ -36,7 +36,7 @@ export default function Home() {
       <OurWorld/>
       <Stories  />
       <JoinUs  />
-      <Footer />
+     
       <div
         className={`h-[5000px] ${blank? "block" : "hidden"
         }`}

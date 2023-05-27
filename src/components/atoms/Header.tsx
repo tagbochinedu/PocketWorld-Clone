@@ -5,12 +5,13 @@ import { navlinks } from "@/lib/data";
 import Link from "next/link";
 import Image from "next/image";
 import { useScrollAuth } from "@/context/ScrollContext";
+import { useRouter } from "next/router";
 
 
 const Header = () => {
   
   const { navInView } = useScrollAuth();
-  
+  const router = useRouter()
 
   return (
     <header
@@ -21,18 +22,30 @@ const Header = () => {
       <div className="mx-0 lg:mx-10 bg-primary lg:rounded-l-full lg:rounded-r-full ">
         <div className="max-w-[1340px] mx-auto  px-7 lg:px-10 py-4 lg:py-6 flex justify-between items-center">
           <div className="w-fit">
-            <Logosvg className="w-auto h-auto"/>
+            <Logosvg className="w-auto h-auto" />
           </div>
           <nav className="w-3/12 text-white font-gtb font-semibold hidden lg:block">
             <ul className=" flex justify-between ">
               {navlinks.map((navlink, index) => (
-                <li key={index} className="text-sm">
+                <li
+                  key={index}
+                  className={`text-sm transition-all ease-in-out duration-150 hover:text-secondary ${
+                    router.pathname === `/${navlink.link}`
+                      ? "text-secondary"
+                      : "text-white"
+                  }`}
+                  onClick={() => {
+                    console.log(router);
+                  }}
+                >
                   <Link href={`/${navlink.link}`}>{navlink.name}</Link>
                 </li>
               ))}
             </ul>
           </nav>
-          <div className="block lg:hidden"><Image src={hamburger} alt='hamburger icon'/></div>
+          <div className="block lg:hidden">
+            <Image src={hamburger} alt="hamburger icon" />
+          </div>
         </div>
       </div>
     </header>

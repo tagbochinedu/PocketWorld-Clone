@@ -1,11 +1,26 @@
-import React from 'react'
+import CareersHeroSection from "@/components/molecules/CareersHeroSection";
+import Ethos from "@/components/molecules/Ethos";
+import React from "react";
+import Head from "next/head";
+import PioneeringFounders from "@/components/molecules/PioneeringFounders";
+import WhyPocketWorlds from "@/components/molecules/WhyPocketWorlds";
+import BenefitsAndPerks from "@/components/molecules/BenefitsAndPerks";
+import Threestep from "@/components/molecules/Threestep";
 
 const index = () => {
-  return (<div className='bg-secondary'>
-    <div className='relative top-[100px] bg-blue-500'>hello</div>
-    <div className='relative bg-red-700'>hello</div>
+  return (
+    <div className="bg-secondary">
+      <Head>
+        <title>Careers Page</title>
+      </Head>
+      <CareersHeroSection />
+      <Ethos />
+      <PioneeringFounders />
+      <WhyPocketWorlds />
+      <BenefitsAndPerks />
+      <Threestep />
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default index;

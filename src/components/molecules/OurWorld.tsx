@@ -31,7 +31,6 @@ const TextSection =()=>{
 }
 
 const OurWorld = () => {
-
   const { char } = useScrollAuth();
   return (
     <SectionWrapper
@@ -39,7 +38,7 @@ const OurWorld = () => {
         char ? "block" : "hidden"
       }`}
     >
-      <Pizzasvg className="right-[260px] rotate-[230deg] top-[-100px] w-[180px] h-auto hidden lg:block" />
+      <Pizzasvg className="right-[260px] rotate-[230deg] top-[-100px] w-[180px] h-auto hidden lg:block z-[1]" />
      <TextSection/> 
       <Map />
     </SectionWrapper>

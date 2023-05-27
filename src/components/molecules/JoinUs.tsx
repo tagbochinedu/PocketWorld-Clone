@@ -60,9 +60,9 @@ const JoinUs = <T extends DOMRect>() => {
                 target="_blank"
                 className="text-center"
               >
-                <button className="rounded-full bg-primary py-3 w-36 text-base font-bold font-gt group-hover:shadow-joblist relative top-[0px] left-[0px] group-hover:shadow-joblist group-hover:top-[5px] group-hover:left-[5px] group-hover:text-secondary transition-all ease-linear duration-[250ms]">
+                <button className="rounded-full bg-primary py-3 w-36 text-base font-bold font-gt hover:shadow-joblist relative top-[0px] left-[0px] hover:shadow-joblist hover:top-[5px] hover:left-[5px] hover:text-secondary transition-all ease-linear duration-[250ms]">
                   Apply
-                </button>{" "}
+                </button>
               </a>
             </div>
           </div>
