@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Ethos = () => {
   return (
-    <SectionWrapper sectionClass="bg-secondary pt-[290px] text-white min-h-[100vh] pb-[140px]">
+    <SectionWrapper sectionClass="bg-secondary pt-20 md:pt-[290px] text-white min-h-[100vh] pb-[70px] md:pb-[140px]">
       <div className="relative">
         {" "}
         <Image
