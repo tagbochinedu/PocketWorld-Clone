@@ -16,7 +16,7 @@ const WhyPocketWorlds = () => {
       <p className="text-xl leading-8 mb-10 font-gt md:max-w-5xl mx-auto text-center">
         Pocket Worlds offers a unique blend of cutting-edge technology,
         boundless creativity, and a vibrant global community. As part of our
-        crew, you'll redefine digital experiences and create lasting connections
+        crew, you&apos;ll redefine digital experiences and create lasting connections
         with users worldwide.
       </p>
       <div className="flex flex-col md:flex-row gap-x-5">
