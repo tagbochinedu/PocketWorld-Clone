@@ -6,7 +6,7 @@ import jimmy from "../../../public/jimmy.jpeg";
 
 const PioneeringFounders = () => {
   return (
-    <SectionWrapper sectionClass="bg-primary py-[140px] text-white">
+    <SectionWrapper sectionClass="bg-primary py-20 md:py-[140px] text-white">
       <h2 className="text-[60px] md:text-[14vw] lg:text-[160px] font-normal leading-[50px] md:leading-[100px] lg:leading-[140px] font-gt text-center mb-10">
         Meet our ‍<br />
         <span className="font-bold">Pioneering Founders</span>
