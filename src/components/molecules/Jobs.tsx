@@ -34,7 +34,7 @@ useEffect(() => {
       }`}
     >
       <Glassessvg />
-      <Pizzasvg className="right-0 top-[450px] w-[236px] h-auto" />
+      <Pizzasvg className="right-0 top-[450px] w-[236px] h-auto z-[1]" />
 
       <div className="flex pb-20 lg:pb-0">
         <div
