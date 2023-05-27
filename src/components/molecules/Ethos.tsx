@@ -10,9 +10,17 @@ const Ethos = () => {
     <SectionWrapper sectionClass="bg-secondary pt-[290px] text-white min-h-[100vh] pb-[140px]">
       <div className="relative">
         {" "}
-        <Image src={polygon} alt="" className="absolute -top-32 right-28" />
-        <h2 className="text-[14vw] lg:text-[160px] font-normal leading-[100px] lg:leading-[140px] font-gt pb-[100px] lg:pb-[130px] relative">
-          <Image src={earphones} alt="" className="absolute -top-5 lg:-top-7 lg:-left-1.5 w-24 lg:w-auto" />
+        <Image
+          src={polygon}
+          alt=""
+          className="hidden md:block absolute -top-32 right-28"
+        />
+        <h2 className="text-[60px] md:text-[14vw] lg:text-[160px] font-normal leading-[50px] md:leading-[100px] lg:leading-[140px] font-gt pb-[30px] pb-[100px] lg:pb-[130px] relative">
+          <Image
+            src={earphones}
+            alt=""
+            className="absolute -top-2 md:-top-5 lg:-top-7 lg:-left-1.5 w-12 md:w-24 lg:w-auto"
+          />
           <span className="font-bold">Our Ethos:</span> A Galaxy of Values
         </h2>
         <h4 className="text-[48px] font-black leading-[56px] font-gtb mb-6">
@@ -25,11 +33,11 @@ const Ethos = () => {
           your mark?
         </p>
       </div>
-      <div className="pt-[240px] pb-20 mb-8 flex flex-wrap border-b border-b-white">
+      <div className="pt-[240px] pb-20 mb-8 md:flex flex-wrap border-b border-b-white">
         {ethos.map((etho) => (
           <div
             key={etho.id}
-            className="w-6/12 first:mb-36 second:mb-36 even:pl-5 odd:pr-5 "
+            className="md:w-6/12 even:mb-36 odd:mb-36 md:first:mb-36 md:second:mb-36 md:even:pl-5 md:odd:pr-5 "
           >
             <div className="relative h-full">
               <div className="top-[-100px] absolute">
@@ -39,7 +47,7 @@ const Ethos = () => {
                   className="rotate-[-10deg]"
                 />
               </div>
-              <div className="w-11/12 ml-auto p-10 bg-primary relative z-20 rounded-2xl">
+              <div className="md:w-11/12 ml-auto p-5 md:p-10 bg-primary relative z-20 rounded-2xl">
                 <h5 className="font-bold text-[32px] leading-10 mb-3.5 font-gtb">
                   {etho.title}
                 </h5>

@@ -7,18 +7,18 @@ import jimmy from "../../../public/jimmy.jpeg";
 const PioneeringFounders = () => {
   return (
     <SectionWrapper sectionClass="bg-primary py-[140px] text-white">
-      <h2 className="text-[14vw] lg:text-[160px] font-normal leading-[100px] lg:leading-[140px] font-gt text-center mb-10">
+      <h2 className="text-[60px] md:text-[14vw] lg:text-[160px] font-normal leading-[50px] md:leading-[100px] lg:leading-[140px] font-gt text-center mb-10">
         Meet our ‍<br />
         <span className="font-bold">Pioneering Founders</span>
       </h2>
-      <p className="text-xl font-normal leading-8 max-w-[80%] mx-auto text-center font-gt mb-11">
+      <p className="text-xl font-normal leading-8 md:max-w-[80%] mx-auto md:text-center font-gt mb-11">
         Anton and Jimmy, our visionary founders, embarked on their mission to
         revolutionize online connections, play, and interaction in 2013. Their
         passion and entrepreneurial spirit continue to guide Pocket Worlds as we
         reach for the stars.
       </p>
-      <div className="w-10/12 lg:w-6/12 flex gap-x-5 mx-auto">
-        <div className="w-6/12">
+      <div className="md:w-10/12 lg:w-6/12 md:flex gap-x-5 mx-auto">
+        <div className="md:w-6/12 mb-20 md:mb-0">
           <div className=" rounded-t-full ">
             <Image
               src={anton}
@@ -36,7 +36,7 @@ const PioneeringFounders = () => {
             </h6>
           </div>{" "}
         </div>
-        <div className="w-6/12">
+        <div className="md:w-6/12">
           <div className=" rounded-t-full ">
             <Image
               src={jimmy}

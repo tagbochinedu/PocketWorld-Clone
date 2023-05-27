@@ -14,13 +14,17 @@ const BenefitsAndPerks = () => {
   return (
     <SectionWrapper sectionClass="py-[140px] text-primary bg-[#ffc5c5]">
       <H2 spanText="Benefits & Perks" otherText="Reach for the Stars" />
-      <div className="flex flex-wrap gap-y-20 font-gt pt-16">
-        <div className="w-4/12">
+      <div className="md:flex flex-wrap gap-y-20 font-gt pt-16">
+        <div className="md:w-4/12 mb-10 md:mb-0">
           <div className="relative">
-            <Image src={grad} alt="" className="max-w-[260px] h-auto mx-auto" />
+            <Image
+              src={grad}
+              alt=""
+              className="md:max-w-[260px] h-auto mx-auto"
+            />
             <Star text="1000" className="top-40 right-10" />
           </div>
-          <div className="max-w-[220px] lg:max-w-xs mx-auto">
+          <div className="md:max-w-[220px] lg:max-w-xs mx-auto">
             <h6 className="text-xl font-bold leading-8 mb-2">
               Training & Education Budget
             </h6>
@@ -30,12 +34,16 @@ const BenefitsAndPerks = () => {
             </p>
           </div>
         </div>
-        <div className="w-4/12 relative top-16">
+        <div className="md:w-4/12 relative md:top-16 mb-10 md:mb-0">
           <div className="relative">
-            <Image src={team} alt="" className="max-w-[260px] h-auto mx-auto" />
+            <Image
+              src={team}
+              alt=""
+              className="md:max-w-[260px] h-auto mx-auto"
+            />
             <Star text="25" className="top-40 right-10" />
           </div>
-          <div className="max-w-[220px] lg:max-w-xs mx-auto">
+          <div className="md:max-w-[220px] lg:max-w-xs mx-auto">
             <h6 className="text-xl font-semibold leading-8 mb-2">
               Team Building Budget
             </h6>
@@ -45,16 +53,16 @@ const BenefitsAndPerks = () => {
             </p>
           </div>
         </div>
-        <div className="w-4/12 relative -top-12">
+        <div className="md:w-4/12 relative md:-top-12 mb-10 md:mb-0">
           <div className="relative">
             <Image
               src={football}
               alt=""
-              className="max-w-[260px] h-auto mx-auto"
+              className="md:max-w-[260px] h-auto mx-auto"
             />
             <Star text="50" className="top-32 right-12" />
           </div>
-          <div className="max-w-[220px] lg:max-w-xs mx-auto">
+          <div className="md:max-w-[220px] lg:max-w-xs mx-auto">
             <h6 className="text-xl font-semibold leading-8 mb-2">
               Fitness Allowance
             </h6>
@@ -64,16 +72,16 @@ const BenefitsAndPerks = () => {
             </p>
           </div>
         </div>
-        <div className="w-4/12">
+        <div className="md:w-4/12 mb-10 md:mb-0">
           <div className="relative">
             <Image
               src={candy}
               alt=""
-              className="max-w-[260px] h-auto mx-auto"
+              className="md:max-w-[260px] h-auto mx-auto"
             />
           </div>
 
-          <div className="max-w-[220px] lg:max-w-xs mx-auto">
+          <div className="md:max-w-[220px] lg:max-w-xs mx-auto">
             <h6 className="text-xl font-semibold leading-8 mb-2">
               Coworking Space Stipend
             </h6>
@@ -83,16 +91,16 @@ const BenefitsAndPerks = () => {
             </p>
           </div>
         </div>
-        <div className="w-4/12 relative top-24">
+        <div className="md:w-4/12 relative md:top-24 mb-10 md:mb-0">
           <div className="relative">
             <Image
               src={baby}
               alt=""
-              className="max-w-[260px] h-auto mx-auto mb-10"
+              className="md:max-w-[260px] h-auto mx-auto mb-10"
             />
             <Star text="100" className="top-24 right-16" />
           </div>
-          <div className="max-w-[220px] lg:max-w-xs mx-auto">
+          <div className="md:max-w-[220px] lg:max-w-xs mx-auto">
             <h6 className="text-xl font-semibold leading-8 mb-2">
               Family Leave
             </h6>
@@ -102,15 +110,15 @@ const BenefitsAndPerks = () => {
             </p>
           </div>
         </div>
-        <div className="w-4/12">
+        <div className="md:w-4/12 mb-10 md:mb-0">
           <div className="relative">
             <Image
               src={party}
               alt=""
-              className="max-w-[260px] h-auto mx-auto"
+              className="md:max-w-[260px] h-auto mx-auto"
             />
           </div>
-          <div className="max-w-[220px] lg:max-w-xs mx-auto">
+          <div className="md:max-w-[220px] lg:max-w-xs mx-auto">
             <h6 className="text-xl font-semibold leading-8 mb-2">
               Annual Retreat
             </h6>

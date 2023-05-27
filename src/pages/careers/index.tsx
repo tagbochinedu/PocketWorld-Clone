@@ -17,10 +17,10 @@ const index = () => {
       <Ethos />
       <PioneeringFounders />
       <WhyPocketWorlds />
-      <BenefitsAndPerks />
+     <BenefitsAndPerks />
       <Threestep />
     </div>
   );
 };
-
+ //
 export default index;
