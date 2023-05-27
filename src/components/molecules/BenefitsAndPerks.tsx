@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const BenefitsAndPerks = () => {
   return (
-    <SectionWrapper sectionClass="py-[140px] text-primary bg-[#ffc5c5]">
+    <SectionWrapper sectionClass="py-20 md:py-[140px] text-primary bg-[#ffc5c5]">
       <H2 spanText="Benefits & Perks" otherText="Reach for the Stars" />
       <div className="md:flex flex-wrap gap-y-20 font-gt pt-16">
         <div className="md:w-4/12 mb-10 md:mb-0">

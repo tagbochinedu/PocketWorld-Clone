@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const WhyPocketWorlds = () => {
   return (
-    <SectionWrapper sectionClass="py-[140px] bg-primary text-white">
+    <SectionWrapper sectionClass="py-20 md:py-[140px] bg-primary text-white">
       <H2 spanText="Why Pocket Worlds" otherText="A Universe
         Apart"/>
       <p className="text-xl leading-8 mb-10 font-gt md:max-w-5xl mx-auto text-center">

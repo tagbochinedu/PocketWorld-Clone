@@ -4,7 +4,7 @@ import puzzle from "../../../public/puzzle.svg";
 
 const Threestep = () => {
   return (
-    <section className="bg-primary py-[140px] text-white overflow-hidden lg:mb-[100vh]">
+    <section className="bg-primary py-20 md:py-[140px] text-white overflow-hidden lg:mb-[100vh]">
       <div className="mx-auto max-w-[1340px] px-7 lg:px-10">
         <div className="lg:pl-[110px] relative pb-20">
           <Image src={puzzle} alt="" className="hidden md:block absolute right-0 -top-10 z-10 lg:z-20" />
@@ -20,7 +20,7 @@ const Threestep = () => {
 
       <div className="bg-secondary py-10 md:py-[70px] relative rounded-l-full left-[5%]">
         <div className="px-10 md:px-20 lg:px-[180px]">
-          <h4 className="text-[32px] md:text-[64px] font-black mb-5 md:mb-10 font-gt leading-10 leading-[72px] max-w-4xl">
+          <h4 className="text-[32px] md:text-[64px] font-black mb-5 md:mb-10 font-gt leading-10 md:leading-[72px] max-w-4xl">
             Join us to build the future of virtual worlds
           </h4>{" "}
           <a
